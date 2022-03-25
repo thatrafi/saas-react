@@ -13,6 +13,6 @@
   },
   "plugins": ["react"],
   "rules": {
-    "react/prop-types": "none"
+    "react/prop-types": 0
   }
 }
