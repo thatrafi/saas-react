@@ -13,9 +13,16 @@ button {
 .primary {
   background-color: $primaryColor;
   color: $whiteColor;
+  box-sizing: border-box;
+  width: 128px;
+  height: 56px; 
 }
 
 .secondary {
   background-color: $whiteColor;
   color: $primaryColor;
+  border: 2px solid $violetColor;
+  box-sizing: border-box;
+  width: 128px;
+  height: 56px; 
 }

@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <h1>Hai there</h1>
       <span className="label-gradient">Hello world</span>
-      <Button label="Submit" type="submit" isPrimary={isPrimary} />
+      <Button label="Submit" type="submit" isPrimary={isPrimary} className="" />
     </div>
   );
 };
