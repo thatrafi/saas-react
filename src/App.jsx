@@ -1,8 +1,12 @@
 import React from 'react';
+import './styles/style.css';
 
 function App() {
   return (
-    <h1>This is new Project</h1>
+    <div>
+      <h1>Heading 1</h1>
+      <span className="label-gradient">Hai</span>
+    </div>
   );
 }
 
