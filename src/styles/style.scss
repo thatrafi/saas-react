@@ -1,0 +1,42 @@
+@import "../settings/variables.scss";
+
+.main {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  @include fontStyle(56px, 110%, 700);
+}
+
+h2 {
+  @include fontStyle(48px, 120%, 700);
+}
+
+h3 {
+  @include fontStyle(36px, 120%, 700);
+}
+
+h4 {
+  @include fontStyle(24px, 140%, 700);
+}
+
+h5 {
+  @include fontStyle(18px, 150%, 700);
+}
+
+h6 {
+  @include fontStyle(16px, 150%, 700);
+}
+
+p {
+  @include fontStyle(16px, 150%, 400);
+}
+
+span {
+  @include fontStyle(24px, 120%, 700);
+  background: $labelGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

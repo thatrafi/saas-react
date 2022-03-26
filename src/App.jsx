@@ -1,9 +1,24 @@
 import React from 'react';
+import Button from './atoms/button/Button';
 
-function App() {
+import './styles/style.css';
+
+const App = () => {
+  const isPrimary = true;
   return (
-    <h1>This is new Project</h1>
+    <div>
+      <h1>Hai there</h1>
+      <span className="label-gradient">Hello world</span>
+      <Button
+        label="Submit"
+        width="128px"
+        height="56px"
+        type="submit"
+        isPrimary={isPrimary}
+        className=""
+      />
+    </div>
   );
-}
+};
 
 export default App;

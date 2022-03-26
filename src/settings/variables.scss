@@ -1,0 +1,22 @@
+$primaryColor: #1d2130;
+$blueColor: #6b7cff;
+$violetColor: #e0e4fc;
+$whiteColor: #ffffff;
+$labelGradient: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+$blurGradient: radial-gradient(
+  483.9% 2719.65% at -49.5% -250%,
+  #d798e1 17.55%,
+  #9bffa5 27.56%,
+  #aed3ff 49.89%,
+  #c9d4ef 56.53%,
+  #cacffa 65.69%
+);
+$fontFamily: "Roboto", sans-serif;
+
+@mixin fontStyle ($size,$lineHeight,$weight) {
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
