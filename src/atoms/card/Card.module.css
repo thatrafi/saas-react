@@ -2,9 +2,38 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #e0e4fc;
   border-radius: 24px;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.big {
   height: 344px;
   width: 1280px;
+}
+
+.small {
+  height: 404px;
+  width: 411px;
+}
+
+.violet {
+  background-color: #e0e4fc;
+}
+
+.blue {
+  background-color: #6b7cff;
 }
 /*# sourceMappingURL=Card.module.css.map */

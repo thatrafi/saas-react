@@ -13,7 +13,7 @@ const App = () => {
       <h1>Hai there</h1>
       <span className="label-gradient">Hello world</span>
       <SearchBar onSearchClicked={searchHandler} />
-      <Card />
+      <Card className="card row blue small" />
     </div>
   );
 };

@@ -1,20 +1,14 @@
 import React from 'react';
-import clsx from 'clsx';
+import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
 import styles from './Button.module.css';
 
 const Button = (props) => {
   const { type, className, label, onClick } = props;
   const styleButton = {};
-  const classArr = className.split(' ');
-  var classNames = [];
-  classArr.map((c) => {
-    if (styles[c]) {
-      classNames.push(styles[c]);
-    }
-  });
+  const classes = MapPropsToStyles(styles, className);
   return (
-    <button type={type} style={styleButton} onClick={onClick} className={clsx(classNames)}>
+    <button type={type} style={styleButton} onClick={onClick} className={classes}>
       <h6>{label}</h6>
     </button>
   );

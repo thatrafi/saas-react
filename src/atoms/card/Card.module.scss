@@ -1,9 +1,32 @@
 @import '../../settings/variables.scss';
 
-.card{
-    display: flex;
-    background-color: $violetColor;
-    border-radius: 24px;
-    height: 344px;
-    width: 1280px;
+.card {
+  display: flex;
+  border-radius: 24px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.big {
+  height: 344px;
+  width: 1280px;
+}
+
+.small {
+  height: 404px;
+  width: 411px;
+}
+
+.violet {
+  background-color: $violetColor;
+}
+
+.blue {
+  background-color: $blueColor;
 }

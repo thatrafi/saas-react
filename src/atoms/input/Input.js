@@ -1,23 +1,17 @@
 import React from 'react';
 import styles from './Input.module.css';
-import clsx from 'clsx';
+import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
 const Input = React.forwardRef((props, ref) => {
   const { type, name, value, placeholder, className, onChange, onClick } = props;
-  const classArr = className.split(' ');
-  var classNames = [];
-  classArr.map((c) => {
-    if (styles[c]) {
-      classNames.push(styles[c]);
-    }
-  });
+  const classes = MapPropsToStyles(styles, className);
   return (
     <input
       type={type}
       name={name}
       value={value}
       placeholder={placeholder}
-      className={clsx(classNames)}
+      className={classes}
       onChange={onChange}
       onClick={onClick}
       ref={ref}
