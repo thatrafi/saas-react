@@ -1,0 +1,9 @@
+@import '../../settings/variables.scss';
+
+.card{
+    display: flex;
+    background-color: $violetColor;
+    border-radius: 24px;
+    height: 344px;
+    width: 1280px;
+}

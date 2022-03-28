@@ -1,18 +1,20 @@
 import React from 'react';
+import clsx from 'clsx';
 
-import './Button.css';
+import styles from './Button.module.css';
 
 const Button = (props) => {
-  const { isPrimary, type, className, label } = props;
-  const buttonSize = {
-    width: props.width,
-    height: props.height
-  };
+  const { type, className, label, onClick } = props;
+  const styleButton = {};
+  const classArr = className.split(' ');
+  var classNames = [];
+  classArr.map((c) => {
+    if (styles[c]) {
+      classNames.push(styles[c]);
+    }
+  });
   return (
-    <button
-      type={type}
-      style={buttonSize}
-      className={`${isPrimary ? 'primary' : 'secondary'} ${className}`}>
+    <button type={type} style={styleButton} onClick={onClick} className={clsx(classNames)}>
       <h6>{label}</h6>
     </button>
   );

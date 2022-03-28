@@ -1,0 +1,31 @@
+input {
+  background-color: white;
+  color: #1d2130;
+  padding: 0 20px;
+  border: 0px;
+}
+
+.primary {
+  background-color: #1d2130;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #ffffff;
+  color: #1d2130;
+}
+
+.small {
+  width: 303px;
+  height: 72px;
+}
+
+.big {
+  width: 576px;
+  height: 72px;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+/*# sourceMappingURL=Input.module.css.map */
