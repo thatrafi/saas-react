@@ -4,12 +4,16 @@ import CircleCard from './atoms/card/CircleCard';
 import Icon from './atoms/icon/Icon';
 import Logo from './atoms/logo/Logo';
 import SearchBar from './molecules/searchBar/SearchBar';
+import TabAction from './molecules/tabAction/TabAction';
 
 import './styles/style.css';
 
 const App = () => {
   const searchHandler = (data) => {
     console.log('Search this' + data);
+  };
+  const tabClickedHandler = (data) => {
+    console.log(data);
   };
   return (
     <div>
@@ -23,6 +27,7 @@ const App = () => {
       <Icon src="IconMessenger@1x.png" />
       <CircleCard className="primary medium">A</CircleCard>
       <Logo src="Logo_1.png" />
+      <TabAction tabs={['Monthly', 'Yearly']} onTabClicked={tabClickedHandler} />
     </div>
   );
 };

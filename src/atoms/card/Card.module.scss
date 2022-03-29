@@ -1,9 +1,9 @@
 @import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
 
 .card {
   display: flex;
   border-radius: 24px;
-  background-color: grey;
 }
 
 .row {
@@ -24,8 +24,8 @@
   width: 411px;
 }
 
-.violet {
-  background-color: $violetColor;
+.fit {
+  max-width: fit-content;
 }
 
 .pink {

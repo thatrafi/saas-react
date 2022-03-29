@@ -1,9 +1,30 @@
+.primary {
+  background-color: #1d2130;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #ffffff;
+  color: #1d2130;
+}
+
+.violet {
+  background-color: #e0e4fc;
+}
+
+.pink {
+  background-color: #D798E1;
+}
+
+.blue {
+  background-color: #6b7cff;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 24px;
-  background-color: grey;
 }
 
 .row {
@@ -30,8 +51,10 @@
   width: 411px;
 }
 
-.violet {
-  background-color: #e0e4fc;
+.fit {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .pink {

@@ -1,6 +1,7 @@
-@import "../../settings/variables.scss";
+@import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
 
-$buttonHeight : 56px;
+$buttonHeight: 56px;
 
 button {
   display: flex;
@@ -25,16 +26,16 @@ button {
   box-sizing: border-box;
 }
 
-.small{
+.small {
   width: 128px;
   height: $buttonHeight;
 }
 
-.big{
+.big {
   width: 171px;
   height: $buttonHeight;
 }
 
-.rounded{
+.rounded {
   border-radius: 8px;
 }
