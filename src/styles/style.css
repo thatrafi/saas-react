@@ -70,4 +70,26 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.primary {
+  background-color: #1d2130;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #ffffff;
+  color: #1d2130;
+}
+
+.violet {
+  background-color: #e0e4fc;
+}
+
+.pink {
+  background-color: #D798E1;
+}
+
+.blue {
+  background-color: #6b7cff;
+}
 /*# sourceMappingURL=style.css.map */

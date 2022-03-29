@@ -3,6 +3,7 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 24px;
+  background-color: grey;
 }
 
 .row {
@@ -33,7 +34,8 @@
   background-color: #e0e4fc;
 }
 
-.blue {
-  background-color: #6b7cff;
+.pink {
+  background-color: #D798E1;
+  opacity: 15%;
 }
 /*# sourceMappingURL=Card.module.css.map */

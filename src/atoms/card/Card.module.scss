@@ -3,6 +3,7 @@
 .card {
   display: flex;
   border-radius: 24px;
+  background-color: grey;
 }
 
 .row {
@@ -27,6 +28,7 @@
   background-color: $violetColor;
 }
 
-.blue {
-  background-color: $blueColor;
+.pink {
+  background-color: $pinkColor;
+  opacity: 15%;
 }
