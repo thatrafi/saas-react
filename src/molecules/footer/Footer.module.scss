@@ -1,0 +1,54 @@
+@import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
+
+.footerWrapper {
+  width: 100%;
+  background-color: $primaryColor;
+  display: flex;
+  flex-flow: column;
+  gap: 5rem;
+  padding: 5rem 0px;
+}
+
+.footerContent{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.footerSubscribe{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  a{
+    margin: 0px 0px 20px 0px;
+  }
+  h5{
+    margin: 0;
+  }
+}
+
+.footerSubscribeSearch{
+  color: $whiteColor;
+  margin: 0;
+}
+
+.footerSocialMedia{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+  p{
+    color: $whiteColor;
+    opacity: 60%;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+.socialLinks{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

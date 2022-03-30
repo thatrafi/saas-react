@@ -1,0 +1,53 @@
+.primary {
+  background-color: #1d2130;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #ffffff;
+  color: #1d2130;
+}
+
+.violet {
+  background-color: #e0e4fc;
+}
+
+.pink {
+  background-color: #D798E1;
+}
+
+.blue {
+  background-color: #6b7cff;
+}
+
+.footerLink {
+  color: #ffffff;
+}
+
+.footerLink ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.footerLink ul li {
+  list-style: none;
+}
+
+.footerLink ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 60%;
+}
+
+.footerLink ul li h5 {
+  margin: 0;
+}
+/*# sourceMappingURL=FooterLink.module.css.map */

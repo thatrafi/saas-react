@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,CAAC;EACL,gBAAgB,ECCL,OAAO;EDAlB,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,WAAW,CAAC;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;CACZ;;AAED,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "Ruler.module.scss",
+        "../../settings/variables.scss"
+    ],
+    "names": [],
+    "file": "Ruler.module.css"
+}

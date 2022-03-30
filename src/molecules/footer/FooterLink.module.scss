@@ -1,0 +1,24 @@
+@import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
+
+.footerLink {
+  color: $whiteColor;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: $whiteColor;
+            opacity: 60%;
+        }
+        h5{
+          margin: 0;
+        }
+    }
+  }
+}

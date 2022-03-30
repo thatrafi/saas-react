@@ -1,0 +1,15 @@
+.ruler {
+  background-color: #ffffff;
+  opacity: 60%;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.vertical {
+  width: 1px;
+  height: 100%;
+}
+/*# sourceMappingURL=Ruler.module.css.map */
