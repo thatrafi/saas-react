@@ -1,0 +1,34 @@
+@import '../../settings/variables.scss';
+
+.card {
+  display: flex;
+  border-radius: 24px;
+  background-color: grey;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.big {
+  height: 344px;
+  width: 1280px;
+}
+
+.small {
+  height: 404px;
+  width: 411px;
+}
+
+.violet {
+  background-color: $violetColor;
+}
+
+.pink {
+  background-color: $pinkColor;
+  opacity: 15%;
+}

@@ -1,13 +1,15 @@
 @import "../../settings/variables.scss";
 
+$buttonHeight : 56px;
+
 button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 16px 40px;
-  border-radius: 12px;
   border: none;
+  cursor: pointer;
 }
 
 .primary {
@@ -21,4 +23,18 @@ button {
   color: $primaryColor;
   border: 2px solid $violetColor;
   box-sizing: border-box;
+}
+
+.small{
+  width: 128px;
+  height: $buttonHeight;
+}
+
+.big{
+  width: 171px;
+  height: $buttonHeight;
+}
+
+.rounded{
+  border-radius: 8px;
 }

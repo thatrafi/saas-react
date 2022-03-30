@@ -1,18 +1,14 @@
 import React from 'react';
+import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
-import './Button.css';
+import styles from './Button.module.css';
 
 const Button = (props) => {
-  const { isPrimary, type, className, label } = props;
-  const buttonSize = {
-    width: props.width,
-    height: props.height
-  };
+  const { type, className, label, onClick } = props;
+  const styleButton = {};
+  const classes = MapPropsToStyles(styles, className);
   return (
-    <button
-      type={type}
-      style={buttonSize}
-      className={`${isPrimary ? 'primary' : 'secondary'} ${className}`}>
+    <button type={type} style={styleButton} onClick={onClick} className={classes}>
       <h6>{label}</h6>
     </button>
   );

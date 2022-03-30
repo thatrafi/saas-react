@@ -1,22 +1,28 @@
 import React from 'react';
-import Button from './atoms/button/Button';
+import Card from './atoms/card/Card';
+import CircleCard from './atoms/card/CircleCard';
+import Icon from './atoms/icon/Icon';
+import Logo from './atoms/logo/Logo';
+import SearchBar from './molecules/searchBar/SearchBar';
 
 import './styles/style.css';
 
 const App = () => {
-  const isPrimary = true;
+  const searchHandler = (data) => {
+    console.log('Search this' + data);
+  };
   return (
     <div>
       <h1>Hai there</h1>
       <span className="label-gradient">Hello world</span>
-      <Button
-        label="Submit"
-        width="128px"
-        height="56px"
-        type="submit"
-        isPrimary={isPrimary}
-        className=""
-      />
+      <SearchBar onSearchClicked={searchHandler} />
+      <Card className="card row pink small">
+        <p>Hello world</p>
+        <p>Hello 2</p>
+      </Card>
+      <Icon src="IconMessenger@1x.png" />
+      <CircleCard className="primary medium">A</CircleCard>
+      <Logo src="Logo_1.png" />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 $primaryColor: #1d2130;
 $blueColor: #6b7cff;
+$pinkColor: #D798E1;
 $violetColor: #e0e4fc;
 $whiteColor: #ffffff;
 $labelGradient: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
@@ -11,9 +12,9 @@ $blurGradient: radial-gradient(
   #c9d4ef 56.53%,
   #cacffa 65.69%
 );
-$fontFamily: "Roboto", sans-serif;
+$fontFamily: 'Roboto', sans-serif;
 
-@mixin fontStyle ($size,$lineHeight,$weight) {
+@mixin fontStyle($size, $lineHeight, $weight) {
   font-family: $fontFamily;
   font-style: normal;
   font-weight: $weight;

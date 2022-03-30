@@ -40,3 +40,25 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.primary{
+  background-color: $primaryColor;
+  color: $whiteColor;
+}
+
+.secondary{
+  background-color: $whiteColor;
+  color: $primaryColor;
+}
+
+.violet{
+  background-color: $violetColor;
+}
+
+.pink{
+  background-color: $pinkColor;
+}
+
+.blue{
+  background-color: $blueColor;
+}
