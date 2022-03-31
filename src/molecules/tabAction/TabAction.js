@@ -27,7 +27,7 @@ const TabAction = (props) => {
         {buttons.map((btn, key) => (
           <Button
             type="button"
-            className={`${btn.isSelected === '1' ? 'primary' : 'violet'} big`}
+            className={`${btn.isSelected === '1' ? 'primary' : 'violet'} big rounded`}
             onClick={buttonHandler}
             key={key}
             label={btn.label}

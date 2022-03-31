@@ -116,4 +116,8 @@
 .pink {
   background-color: rgba(215, 152, 225, 0.15);
 }
-/*# sourceMappingURL=Card.module.css.map */
+
+.expandText {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=QuestionItem.module.css.map */
