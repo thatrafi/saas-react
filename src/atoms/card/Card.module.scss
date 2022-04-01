@@ -57,8 +57,13 @@ $widthQuestion: 672px;
 
 .pricingSelected {
   @include pricingCardStyle();
-  border: 4px solid $blueColor ;
+  border: 4px solid $blueColor;
   background: transparent;
+}
+
+.faq {
+  width: 1280px;
+  height: 696px;
 }
 
 .fit {

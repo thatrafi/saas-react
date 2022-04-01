@@ -1,0 +1,16 @@
+.CTAWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 568px;
+}
+
+.CTAContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+  margin: 0;
+}

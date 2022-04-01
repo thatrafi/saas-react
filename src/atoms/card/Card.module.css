@@ -107,6 +107,11 @@
   background: transparent;
 }
 
+.faq {
+  width: 1280px;
+  height: 696px;
+}
+
 .fit {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
