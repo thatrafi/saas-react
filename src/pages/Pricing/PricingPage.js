@@ -1,8 +1,8 @@
 import React from 'react';
-import PricingList from '../../organisms/pricing/PricingList';
+import PricingPlan from '../../organisms/pricing/PricingPlan';
 
 const PricingPage = () => {
-  return <PricingList />;
+  return <PricingPlan />;
 };
 
 export default PricingPage;

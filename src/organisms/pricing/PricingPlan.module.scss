@@ -1,0 +1,14 @@
+.pricingPlansWrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.plans{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
