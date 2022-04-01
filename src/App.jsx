@@ -1,6 +1,5 @@
 import React from 'react';
 import IconLabel from './molecules/iconlabel/IconLabel';
-import PricingItem from './molecules/pricing/PricingItem';
 import Card from './atoms/card/Card';
 import CircleCard from './atoms/card/CircleCard';
 import Icon from './atoms/icon/Icon';
@@ -12,6 +11,7 @@ import SearchBar from './molecules/searchBar/SearchBar';
 import TabAction from './molecules/tabAction/TabAction';
 
 import './styles/style.css';
+import PricingPage from './pages/Pricing/PricingPage';
 
 const App = () => {
   const searchHandler = (data) => {
@@ -19,17 +19,6 @@ const App = () => {
   };
   const tabClickedHandler = (data) => {
     console.log(data);
-  };
-  const pricing = {
-    name: 'Regular',
-    subName: 'Starter plan',
-    features: [
-      { name: 'Limited Projects', isAvailable: true },
-      { name: 'Regular Support Business', isAvailable: true },
-      { name: '1 Month Free Trial', isAvailable: true },
-      { name: '3GB Storage', isAvailable: true },
-      { name: 'Ads Preview', isAvailable: true }
-    ]
   };
   return (
     <div>
@@ -46,14 +35,9 @@ const App = () => {
       <Logo src="Logo_1.png" />
       <TabAction tabs={['Monthly', 'Yearly']} onTabClicked={tabClickedHandler} />
       <QuestionItem />
-      <PricingItem
-        headerIcon="Icon@1x.png"
-        headerTitle={pricing.name}
-        headerSubTitle={pricing.subName}
-        features={pricing.features}
-      />
       <IconLabel />
       <Footer />
+      <PricingPage />
     </div>
   );
 };

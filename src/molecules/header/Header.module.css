@@ -10,14 +10,26 @@
 
 .violet {
   background-color: #e0e4fc;
+  color: #1d2130;
 }
 
 .pink {
   background-color: #D798E1;
+  color: #1d2130;
 }
 
 .blue {
   background-color: #6b7cff;
+}
+
+.white {
+  background-color: #ffffff;
+  color: #1d2130;
+}
+
+.green {
+  background-color: #D5F5EA;
+  color: #1d2130;
 }
 
 header {
