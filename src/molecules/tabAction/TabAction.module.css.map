@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACG,cADW,CACX,MAAM,CAAA;EACF,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "TabAction.module.scss"
+    ],
+    "names": [],
+    "file": "TabAction.module.css"
+}

@@ -12,12 +12,24 @@
 
 .violet {
   background-color: $violetColor;
+  color: $primaryColor;
 }
 
 .pink {
   background-color: $pinkColor;
+  color: $primaryColor;
 }
 
 .blue {
   background-color: $blueColor;
+}
+
+.white {
+  background-color: $whiteColor;
+  color: $primaryColor;
+}
+
+.green{
+  background-color: $greenColor;
+  color: $primaryColor;
 }

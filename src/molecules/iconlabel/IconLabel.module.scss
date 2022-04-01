@@ -1,0 +1,9 @@
+@import "../../settings/variables.scss";
+
+.iconLabelWrapper{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}

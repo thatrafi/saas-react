@@ -1,9 +1,11 @@
 @import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
+
+$widthQuestion: 672px;
 
 .card {
   display: flex;
   border-radius: 24px;
-  background-color: grey;
 }
 
 .row {
@@ -14,21 +16,55 @@
   flex-direction: column;
 }
 
-.big {
+.feature {
   height: 344px;
   width: 1280px;
 }
 
-.small {
+.testimonial {
   height: 404px;
   width: 411px;
 }
 
-.violet {
-  background-color: $violetColor;
+@mixin questionCardStyle {
+  box-sizing: border-box;
+  padding: 0px 20px;
+  width: $widthQuestion;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  height: 114px;
+  @include questionCardStyle;
+}
+
+.questionExpand {
+  height: 178px;
+  align-content: flex-start;
+  flex-flow: wrap;
+  @include questionCardStyle;
+}
+
+@mixin pricingCardStyle {
+  width: 411px;
+  height: 714px;
+}
+
+.pricing {
+  @include pricingCardStyle();
+}
+
+.pricingSelected {
+  @include pricingCardStyle();
+  border: 4px solid $blueColor ;
+  background: transparent;
+}
+
+.fit {
+  max-width: fit-content;
 }
 
 .pink {
-  background-color: $pinkColor;
-  opacity: 15%;
+  background-color: rgba($color: $pinkColor, $alpha: 0.15);
 }

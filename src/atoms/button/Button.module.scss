@@ -1,12 +1,14 @@
-@import "../../settings/variables.scss";
+@import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
 
-$buttonHeight : 56px;
+$buttonHeight: 56px;
 
 button {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
   padding: 16px 40px;
   border: none;
   cursor: pointer;
@@ -25,16 +27,16 @@ button {
   box-sizing: border-box;
 }
 
-.small{
+.small {
   width: 128px;
   height: $buttonHeight;
 }
 
-.big{
+.big {
   width: 171px;
   height: $buttonHeight;
 }
 
-.rounded{
+.rounded {
   border-radius: 8px;
 }
