@@ -1,7 +1,8 @@
 import React from 'react';
+import Row from '../../atoms/row/Row';
 
 const ContactPage = () => {
-  return <h1>Contact</h1>;
+  return <Row>Contact</Row>;
 };
 
 export default ContactPage;

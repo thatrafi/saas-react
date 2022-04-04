@@ -1,7 +1,8 @@
 import React from 'react';
+import Row from '../../atoms/row/Row';
 
 const BlogPage = () => {
-  return <h1>Blog</h1>;
+  return <Row>Blog</Row>;
 };
 
 export default BlogPage;

@@ -1,7 +1,8 @@
 import React from 'react';
+import Row from '../../atoms/row/Row';
 
 const ProductPage = () => {
-  return <h1>Product</h1>;
+  return <Row>Product</Row>;
 };
 
 export default ProductPage;
