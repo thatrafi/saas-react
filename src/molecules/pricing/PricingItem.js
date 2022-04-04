@@ -6,9 +6,6 @@ import Button from '../../atoms/button/Button';
 import styles from './Pricing.module.css';
 
 const PricingItem = (props) => {
-  // const onCardClicked = () => {
-  //   props.onPricingItemClicked(props.headerTitle);
-  // };
   return (
     <Card
       className={`${props.selected ? 'pricingSelected' : 'pricing'} column white`}

@@ -47,9 +47,6 @@ const PricingPlan = () => {
       price: '$234'
     }
   ];
-  // const PricingItemClickHandler = (data) => {
-  //   console.log(data);
-  // };
   return (
     <Row label="Pricing Plan">
       <div className={styles.pricingPlansWrapper}>
@@ -68,7 +65,6 @@ const PricingPlan = () => {
                 headerSubTitle={price.subName}
                 features={price.features}
                 price={price.price}
-                // onPricingItemClicked={PricingItemClickHandler}
               />
             ))}
         </div>
