@@ -7,7 +7,9 @@ import styles from './Pricing.module.css';
 
 const PricingItem = (props) => {
   return (
-    <Card className="pricingSelected column">
+    <Card
+      className={`${props.selected ? 'pricingSelected' : 'pricing'} column white`}
+      onClick={props.onChange}>
       <div className={styles.pricingHeader}>
         <Icon src={props.headerIcon || 'Facebook.png'} size="big" />
         <div className="headerTitle">
@@ -25,7 +27,7 @@ const PricingItem = (props) => {
         </p>
         <div className={styles.pricingFooter}>
           <div className="container">
-            <h3>Free</h3>
+            <h3>{props.price}</h3>
             <p>For Limited Periodt</p>
           </div>
           <Button type="button" label="Get Started" className="primary big rounded"></Button>
