@@ -1,7 +1,7 @@
 import React from 'react';
 import Ruler from '../../atoms/ruler/Ruler';
 import NavBrand from '../brand/NavBrand';
-import SearchBar from '../searchBar/SearchBar';
+import FormWithButton from '../formWithButton/FormWithButton';
 import styles from './Footer.module.css';
 import FooterLink from './FooterLink';
 import Icon from '../../atoms/icon/Icon';
@@ -47,7 +47,7 @@ const Footer = () => {
           <NavBrand link="/" navBrand="finsweet-white.png" />
           <div className={styles.footerSubscribeSearch}>
             <h5>Subscribe to our Newslater</h5>
-            <SearchBar />
+            <FormWithButton />
           </div>
         </div>
       </div>
