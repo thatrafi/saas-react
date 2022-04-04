@@ -56,6 +56,9 @@
 .feature {
   height: 344px;
   width: 1280px;
+  padding: 3rem 3rem 1rem 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .testimonial {

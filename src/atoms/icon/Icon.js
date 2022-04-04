@@ -7,7 +7,12 @@ import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 const images = require.context('../../images/icon', true);
 
 const Icon = (props) => {
-  const icon = images(`./${props.src}`);
+  var icon = '';
+  try {
+    icon = images(`./${props.src}`);
+  } catch (error) {
+    console.log(error);
+  }
   const classes = MapPropsToStyles(styles, props.size);
   return props.link ? (
     <Link to={props.link}>

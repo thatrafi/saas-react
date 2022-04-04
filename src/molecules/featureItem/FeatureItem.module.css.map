@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,UAAU;EACvB,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,QAAQ;EACjB,GAAG,EAAE,IAAI;CACZ",
+    "sources": [
+        "FeatureItem.module.scss"
+    ],
+    "names": [],
+    "file": "FeatureItem.module.css"
+}
