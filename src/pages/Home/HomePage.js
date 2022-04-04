@@ -1,7 +1,8 @@
 import React from 'react';
+import Row from '../../atoms/row/Row';
 
 const HomePage = () => {
-  return <h1>Home</h1>;
+  return <Row>Home</Row>;
 };
 
 export default HomePage;

@@ -14,19 +14,19 @@ const Header = () => {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/">Product</NavLink>
+          <NavLink to="/product">Product</NavLink>
         </li>
         <li>
-          <NavLink to="/">About Us</NavLink>
+          <NavLink to="/about">About Us</NavLink>
         </li>
         <li>
-          <NavLink to="/">Pricing</NavLink>
+          <NavLink to="/pricing">Pricing</NavLink>
         </li>
         <li>
-          <NavLink to="/">Blog</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </li>
         <li>
-          <NavLink to="/">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
           <Button type="button" label="Free Trial" className="primary big rounded" />
