@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #d798e1;
+  background-color: #D798E1;
   color: #1d2130;
 }
 
@@ -28,7 +28,12 @@
 }
 
 .green {
-  background-color: #d5f5ea;
+  background-color: #D5F5EA;
+  color: #1d2130;
+}
+
+.orange {
+  background-color: #FFACAC;
   color: #1d2130;
 }
 
@@ -40,8 +45,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   gap: 5rem;
   padding: 5rem 0px;
 }
@@ -52,11 +57,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footerSubscribe {
@@ -65,11 +70,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footerSubscribe a {
@@ -91,14 +96,14 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .footerSocialMedia p {
@@ -114,8 +119,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 10px;
 }
 /*# sourceMappingURL=Footer.module.css.map */
