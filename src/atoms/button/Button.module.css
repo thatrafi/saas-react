@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #D798E1;
+  background-color: #d798e1;
   color: #1d2130;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .green {
-  background-color: #D5F5EA;
+  background-color: #d5f5ea;
   color: #1d2130;
 }
 
@@ -38,14 +38,14 @@ button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 16px;
   padding: 16px 30px;
   border: none;
@@ -56,7 +56,7 @@ button {
   background-color: #1d2130;
   color: #ffffff;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .secondary {
@@ -64,7 +64,7 @@ button {
   color: #1d2130;
   border: 2px solid #e0e4fc;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .small {
