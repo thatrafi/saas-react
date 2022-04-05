@@ -1,5 +1,6 @@
 import React from 'react';
 import Row from '../../atoms/row/Row';
+import CTA from '../../organisms/cta/CTA';
 import Features from '../../organisms/home/Features';
 import TrialForm from '../../organisms/home/TrialForm';
 
@@ -48,6 +49,7 @@ const HomePage = () => {
         color="violet"
       />
       <Features features={features2} border={featureBorder} />
+      <CTA />
     </Row>
   );
 };
