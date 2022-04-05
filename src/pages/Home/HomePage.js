@@ -1,5 +1,6 @@
 import React from 'react';
 import Row from '../../atoms/row/Row';
+import Logos from '../../molecules/logos/Logos';
 import CTA from '../../organisms/cta/CTA';
 import FeatureHome1 from '../../organisms/home/FeatureHome1';
 import FeatureHome2 from '../../organisms/home/FeatureHome2';
@@ -15,6 +16,8 @@ const HomePage = () => {
       <FeatureHome1 />
       <WhyUs />
       <HomeInfoGraphic />
+      <Logos />
+      <WhyUs />
       <FeatureHome2 />
       <ReviewsHome />
       <CTA />
