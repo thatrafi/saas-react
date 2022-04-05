@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #D798E1;
+  background-color: #d798e1;
   color: #1d2130;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .green {
-  background-color: #D5F5EA;
+  background-color: #d5f5ea;
   color: #1d2130;
 }
 
@@ -38,14 +38,14 @@ header {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0px 50px;
 }
 
@@ -55,11 +55,11 @@ header ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: wrap row;
-          flex-flow: wrap row;
+  -ms-flex-flow: wrap row;
+  flex-flow: wrap row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 20px;
 }
 

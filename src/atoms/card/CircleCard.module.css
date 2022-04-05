@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #D798E1;
+  background-color: #d798e1;
   color: #1d2130;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .green {
-  background-color: #D5F5EA;
+  background-color: #d5f5ea;
   color: #1d2130;
 }
 
@@ -38,13 +38,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 12px;
 }
 
