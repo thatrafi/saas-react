@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #d798e1;
+  background-color: #D798E1;
   color: #1d2130;
 }
 
@@ -28,7 +28,12 @@
 }
 
 .green {
-  background-color: #d5f5ea;
+  background-color: #D5F5EA;
+  color: #1d2130;
+}
+
+.orange {
+  background-color: #FFACAC;
   color: #1d2130;
 }
 /*# sourceMappingURL=colors.module.css.map */

@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #d798e1;
+  background-color: #D798E1;
   color: #1d2130;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .green {
-  background-color: #d5f5ea;
+  background-color: #D5F5EA;
   color: #1d2130;
 }
 
@@ -38,23 +38,27 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 12px;
 }
 
 .medium {
   width: 48px;
   height: 48px;
+  max-height: 48px;
+  max-width: 48px;
 }
 
 .small {
   height: 24px;
   width: 24px;
+  max-height: 24px;
+  max-width: 24px;
 }
 /*# sourceMappingURL=CircleCard.module.css.map */
