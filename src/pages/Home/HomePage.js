@@ -11,6 +11,7 @@ const HomePage = () => {
       <TrialForm />
       <FeatureHome1 />
       <FeatureHome2 />
+      <Row label="2 Row Column" />
       <CTA />
     </Row>
   );
