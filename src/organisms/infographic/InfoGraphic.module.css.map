@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC,GAAG,CAAC;EACf,IAAI,EAAE,CAAC;CACR",
+    "sources": [
+        "InfoGraphic.module.scss"
+    ],
+    "names": [],
+    "file": "InfoGraphic.module.css"
+}
