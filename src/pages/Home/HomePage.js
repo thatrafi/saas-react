@@ -4,6 +4,7 @@ import CTA from '../../organisms/cta/CTA';
 import FeatureHome1 from '../../organisms/home/FeatureHome1';
 import FeatureHome2 from '../../organisms/home/FeatureHome2';
 import TrialForm from '../../organisms/home/TrialForm';
+import WhyUs from '../../organisms/home/WhyUs';
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <TrialForm />
       <FeatureHome1 />
       <FeatureHome2 />
+      <WhyUs />
       <CTA />
     </Row>
   );

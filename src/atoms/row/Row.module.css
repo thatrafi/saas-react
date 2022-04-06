@@ -2,5 +2,8 @@
   min-height: 568px;
   width: 100%;
   background-color: aliceblue;
+  padding: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=Row.module.css.map */
