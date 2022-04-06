@@ -13,7 +13,7 @@ const Footer = () => {
       links: [
         { pathname: 'About Us', link: '/' },
         { pathname: 'Why Choose Us', link: '/' },
-        { pathname: 'Pricing', link: '/' },
+        { pathname: 'Pricing', link: '/pricing' },
         { pathname: 'Testimonials', link: '/' }
       ]
     },
@@ -47,7 +47,7 @@ const Footer = () => {
           <NavBrand link="/" navBrand="finsweet-white.png" />
           <div className={styles.footerSubscribeSearch}>
             <h5>Subscribe to our Newslater</h5>
-            <FormWithButton />
+            <FormWithButton type="primary" />
           </div>
         </div>
       </div>
@@ -55,10 +55,10 @@ const Footer = () => {
         <Ruler type="horizontal" />
         <p>Copy right @2022</p>
         <div className={styles.socialLinks}>
-          <Icon src="Facebook.png" link="/" />
-          <Icon src="Instagram.png" link="/" />
-          <Icon src="Instagram.png" link="/" />
-          <Icon src="Instagram.png" link="/" />
+          <Icon src="Facebook.png" link="https://www.facebook.com/thatrafi" />
+          <Icon src="Twitter.png" link="https://twitter.com" />
+          <Icon src="Instagram.png" link="https://www.instagram.com" />
+          <Icon src="LinkedIn.png" link="https://www.linkedin.com" />
         </div>
         <Ruler type="horizontal" />
       </div>
