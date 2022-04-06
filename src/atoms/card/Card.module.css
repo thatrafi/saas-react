@@ -74,9 +74,9 @@
 
 .question {
   height: 114px;
+  padding: 0px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0px 20px;
   width: 672px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -88,13 +88,13 @@
 
 .questionExpand {
   height: 178px;
+  padding: 40px 20px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0px 20px;
   width: 672px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -118,7 +118,7 @@
 
 .faq {
   width: 1280px;
-  height: 696px;
+  height: 100%;
 }
 
 .fit {
