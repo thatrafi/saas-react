@@ -10,8 +10,10 @@ const InfoRow = (props) => {
     <div className={`${styles.row} ${classes}`}>
       <div className={styles.header} style={headerStyle}>
         <span>{props.headline}</span>
-        <h1>{props.title || 'Title'}</h1>
-        <p>{props.subtitle}</p>
+        <div className="container">
+          <h1>{props.title || 'Title'}</h1>
+          <p>{props.subtitle}</p>
+        </div>
       </div>
       {props.children}
     </div>
