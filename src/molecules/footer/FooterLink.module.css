@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #d798e1;
+  background-color: #D798E1;
   color: #1d2130;
 }
 
@@ -28,7 +28,12 @@
 }
 
 .green {
-  background-color: #d5f5ea;
+  background-color: #D5F5EA;
+  color: #1d2130;
+}
+
+.orange {
+  background-color: #FFACAC;
   color: #1d2130;
 }
 
@@ -44,8 +49,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
 }
 
