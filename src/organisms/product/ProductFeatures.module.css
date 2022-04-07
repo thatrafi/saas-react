@@ -1,6 +1,6 @@
 .titleWrapper {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 .titleWrapper h1 {
-  width: 60%;
+  width: 55%;
 }
 
 .featuresWrapper {
