@@ -121,6 +121,10 @@
   height: 100%;
 }
 
+.full {
+  width: 100%;
+}
+
 .fit {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
