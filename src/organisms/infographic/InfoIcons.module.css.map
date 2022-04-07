@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,aAAa;EACxB,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "InfoIcons.module.scss"
+    ],
+    "names": [],
+    "file": "InfoIcons.module.css"
+}

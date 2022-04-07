@@ -1,40 +1,31 @@
 import React from 'react';
-import InfoRow from '../../atoms/row/InfoRow';
-import TwoColumns from '../../atoms/row/TwoColumns';
-import IconLabel from '../../molecules/iconlabel/IconLabel';
 import Row from '../../atoms/row/Row';
-import styles from './WhyUs.module.css';
+import InfoIcons from '../infographic/InfoIcons';
 
 const WhyUs = () => {
+  const infos = [
+    {
+      label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+      img: 'Arrow.png'
+    },
+    {
+      label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+      img: 'Arrow.png'
+    },
+    {
+      label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+      img: 'Arrow.png'
+    }
+  ];
   return (
     <Row>
-      <TwoColumns>
-        <InfoRow
-          headline="Why should you work with us?"
-          title="To upscale your business to the next level"
-          subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore."
-        />
-        <div className={styles.iconLabelWrapper}>
-          <IconLabel
-            label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
-            iconSize="medium"
-            iconSrc="Arrow.png"
-            iconColor="pink"
-          />
-          <IconLabel
-            label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
-            iconSize="medium"
-            iconSrc="Arrow.png"
-            iconColor="pink"
-          />
-          <IconLabel
-            label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
-            iconSize="medium"
-            iconSrc="Arrow.png"
-            iconColor="pink"
-          />
-        </div>
-      </TwoColumns>
+      <InfoIcons
+        title="To upscale your business to the next level"
+        headline="Why should you work with us?"
+        iconSize="medium"
+        iconColor="orange"
+        infos={infos}
+      />
     </Row>
   );
 };
