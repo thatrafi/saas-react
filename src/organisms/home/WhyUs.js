@@ -2,21 +2,7 @@ import React from 'react';
 import Row from '../../atoms/row/Row';
 import InfoIcons from '../infographic/InfoIcons';
 
-const WhyUs = () => {
-  const infos = [
-    {
-      label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
-      img: 'Arrow.png'
-    },
-    {
-      label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
-      img: 'Arrow.png'
-    },
-    {
-      label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
-      img: 'Arrow.png'
-    }
-  ];
+const WhyUs = (props) => {
   return (
     <Row className="fit">
       <InfoIcons
@@ -24,7 +10,7 @@ const WhyUs = () => {
         headline="Why should you work with us?"
         iconSize="medium"
         iconColor="orange"
-        infos={infos}
+        infos={props.infos}
       />
     </Row>
   );
