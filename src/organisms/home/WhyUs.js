@@ -18,7 +18,7 @@ const WhyUs = () => {
     }
   ];
   return (
-    <Row>
+    <Row className="fit">
       <InfoIcons
         title="To upscale your business to the next level"
         headline="Why should you work with us?"

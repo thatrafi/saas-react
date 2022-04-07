@@ -21,7 +21,7 @@ const DiscoverMore = () => {
     }
   ];
   return (
-    <Row>
+    <Row className="fit">
       <InfoIcons
         title="Analyze your sales and marketing leads"
         headline="Discover More"
