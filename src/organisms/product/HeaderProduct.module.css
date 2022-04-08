@@ -4,8 +4,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   gap: 10px;
 }
 
@@ -16,7 +16,7 @@
 
 .contentWrapper {
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   padding-right: 8rem;
 }
 /*# sourceMappingURL=HeaderProduct.module.css.map */

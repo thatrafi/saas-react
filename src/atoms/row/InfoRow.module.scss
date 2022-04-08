@@ -1,22 +1,22 @@
-.row{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 3rem;
+.row {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 3rem;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.center{
-    justify-content: center;
-    align-items: center;
+.center {
+  justify-content: center;
+  align-items: center;
 }
 
-.right{
-    justify-content: flex-end;
-    align-items: flex-end;
+.right {
+  justify-content: flex-end;
+  align-items: flex-end;
 }

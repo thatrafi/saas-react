@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #D798E1;
+  background-color: #d798e1;
   color: #1d2130;
 }
 
@@ -28,12 +28,12 @@
 }
 
 .green {
-  background-color: #D5F5EA;
+  background-color: #d5f5ea;
   color: #1d2130;
 }
 
 .orange {
-  background-color: #FFACAC;
+  background-color: #ffacac;
   color: #1d2130;
 }
 
@@ -46,14 +46,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 3rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .fit {
@@ -63,7 +63,14 @@
 }
 
 .blurGradient {
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e1 17.55%, #9bffa5 27.56%, #aed3ff 49.89%, #c9d4ef 56.53%, #cacffa 65.69%);
+  background: radial-gradient(
+    483.9% 2719.65% at -49.5% -250%,
+    #d798e1 17.55%,
+    #9bffa5 27.56%,
+    #aed3ff 49.89%,
+    #c9d4ef 56.53%,
+    #cacffa 65.69%
+  );
   color: #1d2130;
 }
 /*# sourceMappingURL=Row.module.css.map */

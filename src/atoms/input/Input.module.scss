@@ -1,6 +1,6 @@
 @import '../../settings/variables.scss';
 
-$heightInput : 72px;
+$heightInput: 72px;
 
 input {
   background-color: white;
@@ -10,7 +10,7 @@ input {
 }
 
 .primary {
-  background-color: #2B2E3C;
+  background-color: #2b2e3c;
   color: $whiteColor;
 }
 
@@ -19,16 +19,16 @@ input {
   color: $primaryColor;
 }
 
-.small{
-    width: 303px;
-    height: $heightInput;
+.small {
+  width: 303px;
+  height: $heightInput;
 }
 
-.big{
+.big {
   width: 576px;
   height: $heightInput;
 }
 
-.rounded{
-    border-radius: 8px;
+.rounded {
+  border-radius: 8px;
 }

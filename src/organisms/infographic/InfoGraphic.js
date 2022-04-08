@@ -20,7 +20,8 @@ const InfoGraphic = (props) => {
           headline={props.headline}
           desc={props.desc}
           title={props.title || 'Title Here'}
-          subtitle={props.subtitle}>
+          subtitle={props.subtitle}
+        >
           {props.content}
         </InfoRow>
       </div>
@@ -29,7 +30,8 @@ const InfoGraphic = (props) => {
           order: props.imgPosition === 'left' ? 0 : 1,
           display: 'flex',
           justifyContent: 'center'
-        }}>
+        }}
+      >
         <img src={image || graphic1} />
       </div>
     </TwoColumns>
