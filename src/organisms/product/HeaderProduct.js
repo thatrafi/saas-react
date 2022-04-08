@@ -13,8 +13,7 @@ const HeaderProduct = () => {
         <div className={styles.contentWrapper}>
           <InfoRow
             title="Grow your Sales and Services"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          >
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
             <div className={styles.buttons}>
               <Button type="button" className="rounded primary big" label="Get Started" />
               <Button type="button" className="rounded secondary big" label="Contact Us" />

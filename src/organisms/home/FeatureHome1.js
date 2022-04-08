@@ -26,8 +26,7 @@ const FeatureHome1 = () => {
       <InfoRow
         headline="High-quality"
         title="We have the Best Solution for your Business"
-        position="center"
-      >
+        position="center">
         <Features features={features1} color="violet" />
       </InfoRow>
     </Row>

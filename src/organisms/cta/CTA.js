@@ -12,8 +12,7 @@ const CTA = () => {
           <InfoRow
             title="Are you ready to grow your business with us?"
             subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-            position="center"
-          >
+            position="center">
             <Button type="button" className="primary big rounded" label="View Pricing" />
           </InfoRow>
         </div>

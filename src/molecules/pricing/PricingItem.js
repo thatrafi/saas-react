@@ -9,8 +9,7 @@ const PricingItem = (props) => {
   return (
     <Card
       className={`${props.selected ? 'pricingSelected' : 'pricing'} column white`}
-      onClick={props.onChange}
-    >
+      onClick={props.onChange}>
       <div className={styles.pricingHeader}>
         <Icon src={props.headerIcon || 'Facebook.png'} size="big" />
         <div className="headerTitle">
