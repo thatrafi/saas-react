@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Row.module.css';
+import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
 const Row = (props) => {
-  return <div className={styles.row}>{props.children}</div>;
+  const classes = MapPropsToStyles(styles, props.className);
+  return <div className={`${styles.row} ${classes}`}>{props.children}</div>;
 };
 
 export default Row;

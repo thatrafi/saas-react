@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,IAAI;EACT,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,iBAAiB,CAAA;EACb,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,MAAM;EAClB,GAAG,EAAE,IAAI;EACT,MAAM,EAAE,CAAC;CACZ",
-    "sources": [
-        "TrialForm.module.scss"
-    ],
-    "names": [],
-    "file": "TrialForm.module.css"
-}

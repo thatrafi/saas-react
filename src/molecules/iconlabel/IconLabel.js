@@ -9,7 +9,10 @@ const IconLabel = (props) => {
       <CircleCard className={`${props.iconSize || 'small'} ${props.iconColor || 'green'}`}>
         <Icon src={props.iconSrc || 'Checked.png'} />
       </CircleCard>
-      <h5>{props.label || 'Label'}</h5>
+      <div className="container">
+        <h5>{props.label || 'Label'}</h5>
+        {props.subtitle && <p>{props.subtitle}</p>}
+      </div>
     </div>
   );
 };

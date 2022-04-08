@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,gBAAgB,CAAC,GAAG,CAAA;EAChB,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,aAAa,CAAC,GAAG,CAAA;EACb,WAAW,EAAE,eAAe;CAC/B;;AAED,AAAA,aAAa,CAAC,GAAG,AAAA,UAAW,CAAA,CAAC,EAAC;EAC1B,WAAW,EAAE,IAAI;CACpB",
-    "sources": [
-        "Features.module.scss"
-    ],
-    "names": [],
-    "file": "Features.module.css"
-}

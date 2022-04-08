@@ -2,18 +2,18 @@ import React from 'react';
 import Row from '../../atoms/row/Row';
 import InfoIcons from '../infographic/InfoIcons';
 
-const WhyUs = (props) => {
+const DiscoverMore = (props) => {
   return (
     <Row className="fit">
       <InfoIcons
-        title="To upscale your business to the next level"
-        headline="Why should you work with us?"
-        iconSize="medium"
-        iconColor="orange"
+        title="Analyze your sales and marketing leads"
+        headline="Discover More"
+        iconSize="big"
+        iconColor="violet"
         infos={props.infos}
       />
     </Row>
   );
 };
 
-export default WhyUs;
+export default DiscoverMore;

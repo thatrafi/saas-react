@@ -1,7 +1,22 @@
+@import '../../styles/colors.module.scss';
+@import '../../settings/variables.scss';
+
 .row {
   min-height: 568px;
   width: 100%;
   background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 3rem;
   box-sizing: border-box;
+}
+
+.fit{
+  min-height: fit-content;
+}
+
+.blurGradient{
+  background: $blurGradient;
+  color: $primaryColor;
 }
