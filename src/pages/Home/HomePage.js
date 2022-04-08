@@ -9,18 +9,19 @@ import HomeInfoGraphic from '../../organisms/home/HomeInfoGraphic';
 import ReviewsHome from '../../organisms/home/ReviewsHome';
 import TrialForm from '../../organisms/home/TrialForm';
 import WhyUs from '../../organisms/home/WhyUs';
+import { whyUsData, discoverData } from '../../data/homeData';
 
 const HomePage = () => {
   return (
     <Fragment>
       <TrialForm />
       <FeatureHome1 />
-      <WhyUs />
+      <WhyUs infos={whyUsData} />
       <HomeInfoGraphic />
       <Row className="fit">
         <Logos />
       </Row>
-      <DiscoverMore />
+      <DiscoverMore infos={discoverData} />
       <FeatureHome2 />
       <ReviewsHome />
       <CTA />
