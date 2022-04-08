@@ -2,24 +2,7 @@ import React from 'react';
 import Row from '../../atoms/row/Row';
 import InfoIcons from '../infographic/InfoIcons';
 
-const DiscoverMore = () => {
-  const infos = [
-    {
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
-      label: 'Sales Tracking',
-      img: 'Icon-1.svg'
-    },
-    {
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
-      label: 'Project Management',
-      img: 'Icon-2.svg'
-    },
-    {
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
-      label: 'Activity Report',
-      img: 'Icon.svg'
-    }
-  ];
+const DiscoverMore = (props) => {
   return (
     <Row className="fit">
       <InfoIcons
@@ -27,7 +10,7 @@ const DiscoverMore = () => {
         headline="Discover More"
         iconSize="big"
         iconColor="violet"
-        infos={infos}
+        infos={props.infos}
       />
     </Row>
   );

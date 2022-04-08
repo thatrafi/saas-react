@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,GAAG,EAAE,IAAI;EACT,OAAO,EAAE,IAAI;CAChB",
-    "sources": [
-        "Reviews.module.scss"
-    ],
-    "names": [],
-    "file": "Reviews.module.css"
-}
