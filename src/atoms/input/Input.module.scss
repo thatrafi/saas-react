@@ -6,7 +6,16 @@ input {
   background-color: white;
   color: $primaryColor;
   padding: 0 20px;
+  min-height: $heightInput;
   border: 0px;
+}
+
+textarea {
+  background-color: white;
+  color: $primaryColor;
+  min-height: $heightInput*2;
+  border: 0px;
+  padding: 1rem 0 0 1rem;
 }
 
 .primary {
