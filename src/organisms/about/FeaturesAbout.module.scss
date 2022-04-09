@@ -1,0 +1,9 @@
+@import '../../styles/colors.module.scss';
+
+.featuresCard{
+    border-radius: 20px;
+}
+
+.pink{
+    background-color: rgba($color: $pinkColor, $alpha: 0.15);
+}

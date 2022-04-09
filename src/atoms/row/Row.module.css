@@ -40,7 +40,6 @@
 .row {
   min-height: 568px;
   width: 100%;
-  background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

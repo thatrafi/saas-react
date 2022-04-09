@@ -9,3 +9,18 @@
 .borderedItem div:nth-child(1) {
   border-left: none;
 }
+
+.featuresWrapper {
+  margin-top: 3rem;
+}
+
+.featureItemWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.featureItemWrapper div {
+  width: 500px;
+}

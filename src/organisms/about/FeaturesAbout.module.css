@@ -36,4 +36,12 @@
   background-color: #FFACAC;
   color: #1d2130;
 }
-/*# sourceMappingURL=colors.module.css.map */
+
+.featuresCard {
+  border-radius: 20px;
+}
+
+.pink {
+  background-color: rgba(215, 152, 225, 0.15);
+}
+/*# sourceMappingURL=FeaturesAbout.module.css.map */
