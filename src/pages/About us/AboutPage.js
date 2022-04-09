@@ -1,12 +1,15 @@
-import React from 'react';
-import Row from '../../atoms/row/Row';
+import React, { Fragment } from 'react';
+import AboutUs from '../../organisms/about/AboutUs';
+import GoalVision from '../../organisms/about/GoalVision';
 import HeaderAbout from '../../organisms/about/HeaderAbout';
 
 const AboutPage = () => {
   return (
-    <Row>
+    <Fragment>
       <HeaderAbout />
-    </Row>
+      <AboutUs />
+      <GoalVision />
+    </Fragment>
   );
 };
 
