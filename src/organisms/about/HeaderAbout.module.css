@@ -1,0 +1,12 @@
+.imgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.headerWrapper p {
+  max-inline-size: 60%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=HeaderAbout.module.css.map */
