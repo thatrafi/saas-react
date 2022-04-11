@@ -14,7 +14,7 @@
 }
 
 .pink {
-  background-color: #D798E1;
+  background-color: #d798e1;
   color: #1d2130;
 }
 
@@ -28,12 +28,12 @@
 }
 
 .green {
-  background-color: #D5F5EA;
+  background-color: #d5f5ea;
   color: #1d2130;
 }
 
 .orange {
-  background-color: #FFACAC;
+  background-color: #ffacac;
   color: #1d2130;
 }
 
@@ -47,15 +47,15 @@
 .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .feature {
@@ -63,44 +63,45 @@
   width: 100%;
   padding: 3rem 3rem 1rem 3rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .testimonial {
   height: 404px;
   width: 100%;
+  border: 2px solid rgba(107, 124, 255, 0.3);
 }
 
 .question {
   height: 114px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 672px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .questionExpand {
   height: 178px;
+  padding: 40px 20px;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   -ms-flex-flow: wrap;
-      flex-flow: wrap;
+  flex-flow: wrap;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px 20px;
+  box-sizing: border-box;
   width: 672px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .pricing {
@@ -117,7 +118,11 @@
 
 .faq {
   width: 1280px;
-  height: 696px;
+  height: 100%;
+}
+
+.full {
+  width: 100%;
 }
 
 .fit {

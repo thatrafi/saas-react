@@ -1,13 +1,11 @@
-
-
-.nonBorderedItem div{
-    border: none;
+.nonBorderedItem div {
+  border: none;
 }
 
-.borderedItem div{
-    border-left: 1px solid black;
+.borderedItem div {
+  border-left: 1px solid black;
 }
 
-.borderedItem div:nth-child(1){
-    border-left: none;
+.borderedItem div:nth-child(1) {
+  border-left: none;
 }

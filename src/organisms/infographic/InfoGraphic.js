@@ -18,6 +18,7 @@ const InfoGraphic = (props) => {
       <div style={{ order: props.imgPosition === 'left' ? 1 : 0, alignSelf: 'flex-start' }}>
         <InfoRow
           headline={props.headline}
+          desc={props.desc}
           title={props.title || 'Title Here'}
           subtitle={props.subtitle}>
           {props.content}
