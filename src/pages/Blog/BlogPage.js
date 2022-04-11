@@ -1,8 +1,12 @@
-import React from 'react';
-import Row from '../../atoms/row/Row';
+import React, { Fragment } from 'react';
+import BlogHeader from '../../organisms/blog/BlogHeader';
 
 const BlogPage = () => {
-  return <Row>Blog</Row>;
+  return (
+    <Fragment>
+      <BlogHeader />
+    </Fragment>
+  );
 };
 
 export default BlogPage;
