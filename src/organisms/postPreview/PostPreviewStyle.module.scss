@@ -1,0 +1,20 @@
+.previewsWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.previewItemWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 411px;
+  height: 100%;
+}
+
+.previewItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
