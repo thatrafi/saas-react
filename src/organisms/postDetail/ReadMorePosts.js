@@ -4,14 +4,14 @@ import Row from '../../atoms/row/Row';
 import PostPreviews from '../postPreview/PostPreviews';
 import { previewPostData } from '../../data/postData';
 
-const AllPosts = () => {
+const ReadMorePosts = () => {
   return (
     <Row>
-      <InfoRow title="All Posts" position="center">
-        <PostPreviews data={previewPostData} />
+      <InfoRow title="Read More posts" position="center">
+        <PostPreviews data={previewPostData.slice(0, 3)} />
       </InfoRow>
     </Row>
   );
 };
 
-export default AllPosts;
+export default ReadMorePosts;

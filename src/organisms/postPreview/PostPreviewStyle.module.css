@@ -35,4 +35,9 @@
   gap: 1rem;
   padding: 1rem 0;
 }
+
+.previewItemContent a {
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=PostPreviewStyle.module.css.map */

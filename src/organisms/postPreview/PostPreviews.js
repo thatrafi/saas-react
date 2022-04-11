@@ -1,14 +1,19 @@
 import React from 'react';
 import PostPreviewItem from './PostPreviewItem';
-import { previewPostData } from '../../data/postData';
 import styles from './PostPreviewStyle.module.css';
 
-const PostPreviews = () => {
+const PostPreviews = (props) => {
   return (
     <div className={styles.previewsWrapper}>
-      {previewPostData &&
-        previewPostData.map((p, key) => (
-          <PostPreviewItem img={p.img} title={p.title} subtitle={p.subtitle} key={key} />
+      {props.data &&
+        props.data.map((p, key) => (
+          <PostPreviewItem
+            img={p.img}
+            title={p.title}
+            previewText={p.previewText}
+            id={p.id}
+            key={key}
+          />
         ))}
     </div>
   );
