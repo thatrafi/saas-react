@@ -1,16 +1,25 @@
 @import '../../settings/variables.scss';
 
-$heightInput : 72px;
+$heightInput: 72px;
 
 input {
   background-color: white;
   color: $primaryColor;
   padding: 0 20px;
+  min-height: $heightInput;
   border: 0px;
 }
 
+textarea {
+  background-color: white;
+  color: $primaryColor;
+  min-height: $heightInput*2;
+  border: 0px;
+  padding: 1rem 0 0 1rem;
+}
+
 .primary {
-  background-color: #2B2E3C;
+  background-color: #2b2e3c;
   color: $whiteColor;
 }
 
@@ -19,16 +28,16 @@ input {
   color: $primaryColor;
 }
 
-.small{
-    width: 303px;
-    height: $heightInput;
+.small {
+  width: 303px;
+  height: $heightInput;
 }
 
-.big{
+.big {
   width: 576px;
   height: $heightInput;
 }
 
-.rounded{
-    border-radius: 8px;
+.rounded {
+  border-radius: 8px;
 }

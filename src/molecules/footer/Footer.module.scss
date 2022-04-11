@@ -10,36 +10,36 @@
   padding: 5rem 0px;
 }
 
-.footerContent{
+.footerContent {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-.footerSubscribe{
+.footerSubscribe {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  a{
+  a {
     margin: 0px 0px 20px 0px;
   }
-  h5{
+  h5 {
     margin: 0;
   }
 }
 
-.footerSubscribeSearch{
+.footerSubscribeSearch {
   color: $whiteColor;
   margin: 0;
 }
 
-.footerSocialMedia{
+.footerSocialMedia {
   display: flex;
   flex-flow: row;
   align-items: center;
   gap: 20px;
   justify-content: space-around;
-  p{
+  p {
     color: $whiteColor;
     opacity: 60%;
     font-size: 12px;
@@ -47,7 +47,7 @@
   }
 }
 
-.socialLinks{
+.socialLinks {
   display: flex;
   flex-direction: row;
   gap: 10px;

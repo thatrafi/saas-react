@@ -1,0 +1,27 @@
+.titleWrapper {
+  text-align: center;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  h1{
+      width: 55%;
+  }
+}
+.featuresWrapper {
+  margin-top: 3rem;
+}
+
+.featureItemWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: rgba($color: white, $alpha: 0.7);
+  border-radius: 0 5rem 0 0;
+  margin-left: -3rem;
+  margin-bottom: -3rem;
+}
+
+.featureItemWrapper div {
+  width: 500px;
+}

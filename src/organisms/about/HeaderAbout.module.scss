@@ -1,0 +1,11 @@
+.imgWrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.headerWrapper {
+  p {
+    max-inline-size: 60%;
+    margin: 0 auto;
+  }
+}

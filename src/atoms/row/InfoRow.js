@@ -14,6 +14,7 @@ const InfoRow = (props) => {
           <h1>{props.title || 'Title'}</h1>
           <p>{props.subtitle}</p>
         </div>
+        <p>{props.desc}</p>
       </div>
       {props.children}
     </div>

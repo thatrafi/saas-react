@@ -2,11 +2,20 @@ input {
   background-color: white;
   color: #1d2130;
   padding: 0 20px;
+  min-height: 72px;
   border: 0px;
 }
 
+textarea {
+  background-color: white;
+  color: #1d2130;
+  min-height: 144px;
+  border: 0px;
+  padding: 1rem 0 0 1rem;
+}
+
 .primary {
-  background-color: #2B2E3C;
+  background-color: #2b2e3c;
   color: #ffffff;
 }
 
