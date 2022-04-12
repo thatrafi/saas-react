@@ -1,6 +1,6 @@
 import React from 'react';
 import Row from '../../atoms/row/Row';
-import FeatureItem from '../../molecules/featureItem/FeatureItem';
+import Features2 from '../../molecules/feature/Features2';
 import styles from './ProductFeatures.module.css';
 
 const ProductFeatures = () => {
@@ -41,18 +41,8 @@ const ProductFeatures = () => {
       <div className={styles.titleWrapper}>
         <h1>Get the best out of your company with our service</h1>
       </div>
-      <div className={styles.featuresWrapper}>
-        <div className={styles.featureItemWrapper}>
-          {features1 &&
-            features1.map((feature, key) => (
-              <FeatureItem
-                key={key}
-                iconSrc={feature.icon}
-                desc={feature.desc}
-                title={feature.title}
-              />
-            ))}
-        </div>
+      <div className={styles.featuresCard}>
+        <Features2 features={features1} />
       </div>
     </Row>
   );

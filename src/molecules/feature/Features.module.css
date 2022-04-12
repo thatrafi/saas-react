@@ -9,4 +9,25 @@
 .borderedItem div:nth-child(1) {
   border-left: none;
 }
+
+.featuresWrapper {
+  margin-top: 3rem;
+}
+
+.featureItemWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.featureItemWrapper div {
+  width: 380px;
+}
 /*# sourceMappingURL=Features.module.css.map */

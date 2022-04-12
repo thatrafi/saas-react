@@ -5,36 +5,19 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .titleWrapper h1 {
   width: 55%;
 }
 
-.featuresWrapper {
-  margin-top: 3rem;
-}
-
-.featureItemWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  padding: 3rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.featuresCard {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 0 5rem 0 0;
   margin-left: -3rem;
   margin-bottom: -3rem;
-}
-
-.featureItemWrapper div {
-  width: 500px;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=ProductFeatures.module.css.map */

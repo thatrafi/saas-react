@@ -1,8 +1,16 @@
-import React from 'react';
-import Row from '../../atoms/row/Row';
+import React, { Fragment } from 'react';
+import CTA from '../../organisms/cta/CTA';
+import PostDetail from '../../organisms/postDetail/PostDetail';
+import ReadMorePosts from '../../organisms/postDetail/ReadMorePosts';
 
 const BlogPostPage = () => {
-  return <Row>BlogPost</Row>;
+  return (
+    <Fragment>
+      <PostDetail />
+      <ReadMorePosts />
+      <CTA />
+    </Fragment>
+  );
 };
 
 export default BlogPostPage;

@@ -16,7 +16,7 @@
 }
 
 .pink {
-  background-color: $pinkColor;
+  background-color: rgba($color: $pinkColor, $alpha: 0.15);
   color: $primaryColor;
 }
 
