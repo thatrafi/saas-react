@@ -1,6 +1,7 @@
 import React from 'react';
 import PostPreviewItem from './PostPreviewItem';
 import styles from './PostPreviewStyle.module.css';
+import { truncateString } from '../../helper/StringHelper';
 
 const PostPreviews = (props) => {
   return (
@@ -8,9 +9,9 @@ const PostPreviews = (props) => {
       {props.data &&
         props.data.map((p, key) => (
           <PostPreviewItem
-            img={p.img}
+            img={p.img || 'post1.png'}
             title={p.title}
-            previewText={p.previewText}
+            previewText={truncateString(p.content, 20)}
             id={p.id}
             key={key}
           />
