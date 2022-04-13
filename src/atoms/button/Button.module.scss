@@ -27,6 +27,12 @@ button {
   box-sizing: border-box;
 }
 
+.hover{
+  background-color: $hoverColor;
+  color: $whiteColor;
+  box-sizing: border-box;
+}
+
 .small {
   width: 128px;
   height: $buttonHeight;
