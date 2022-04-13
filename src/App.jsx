@@ -15,7 +15,7 @@ import ContactPage from './pages/Contact/ContactPage';
 
 const App = () => {
   return (
-    <div>
+    <div className="main">
       <Header />
       <Switch>
         <Route path="/" exact>

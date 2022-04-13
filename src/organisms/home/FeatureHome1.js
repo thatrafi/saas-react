@@ -24,6 +24,7 @@ const FeatureHome1 = () => {
   return (
     <Row label="Feature 1">
       <InfoRow
+        titleWidth="40"
         headline="High-quality"
         title="We have the Best Solution for your Business"
         position="center">

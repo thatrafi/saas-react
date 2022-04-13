@@ -48,7 +48,7 @@ const PricingPlan = () => {
     }
   ];
   return (
-    <Row label="Pricing Plan">
+    <Row label="Pricing Plan" className="center">
       <div className={styles.pricingPlansWrapper}>
         <h2>Pricing Plans that suit you</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>

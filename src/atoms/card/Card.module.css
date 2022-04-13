@@ -110,11 +110,13 @@
 .pricing {
   width: 411px;
   height: 714px;
+  border: 4px solid transparent;
 }
 
 .pricingSelected {
   width: 411px;
   height: 714px;
+  border: 4px solid transparent;
   border: 4px solid #6b7cff;
   background: transparent;
 }

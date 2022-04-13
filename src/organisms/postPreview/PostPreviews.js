@@ -11,7 +11,7 @@ const PostPreviews = (props) => {
           <PostPreviewItem
             img={p.img || 'post1.png'}
             title={p.title}
-            previewText={truncateString(p.content, 20)}
+            previewText={p.content ? truncateString(p.content, 20) : p.previewText}
             id={p.id}
             key={key}
           />
