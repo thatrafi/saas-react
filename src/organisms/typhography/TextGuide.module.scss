@@ -1,0 +1,37 @@
+@import '../../settings/variables.scss';
+
+.wrapper {
+  display: flex;
+  gap: 8rem;
+}
+
+.headingWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.875rem;
+}
+
+.heading {
+  width: 340px;
+  p {
+    color: lightgray;
+    @include fontStyle(1rem, 150%, 700);
+  }
+}
+
+.paragraphWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 518px;
+}
+
+.paragraphLbl {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  p {
+    color: lightgray;
+    @include fontStyle(1rem, 150%, 700);
+  }
+}
