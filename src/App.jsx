@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import * as Sentry from '@sentry/react';
 import Footer from './molecules/footer/Footer';
 import Header from './molecules/header/Header';
 
@@ -13,40 +14,46 @@ import BlogPostPage from './pages/Blog Post/BlogPostPage';
 import AboutPage from './pages/About us/AboutPage';
 import ContactPage from './pages/Contact/ContactPage';
 import TypographyPage from './pages/Typography/TypographyPage';
+import ErrorPage from './pages/Error/ErrorPage';
 
 const App = () => {
   return (
-    <div className="main">
-      <Header />
-      <Switch>
-        <Route path="/" exact>
-          <HomePage />
-        </Route>
-        <Route path="/product">
-          <ProductPage />
-        </Route>
-        <Route path="/blog">
-          <BlogPage />
-        </Route>
-        <Route path="/post">
-          <BlogPostPage />
-        </Route>
-        <Route path="/about">
-          <AboutPage />
-        </Route>
-        <Route path="/pricing">
-          <PricingPage />
-        </Route>
-        <Route path="/contact">
-          <ContactPage />
-        </Route>
-        <Route path="/typography">
-          <TypographyPage />
-        </Route>
-      </Switch>
+    <Fragment>
+      <div className="main">
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/product">
+            <ProductPage />
+          </Route>
+          <Route path="/blog">
+            <BlogPage />
+          </Route>
+          <Route exact path="/post/:postId">
+            <BlogPostPage />
+          </Route>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <Route path="/pricing">
+            <PricingPage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+          <Route path="/typography">
+            <TypographyPage />
+          </Route>
+          <Route path="*">
+            <ErrorPage />
+          </Route>
+        </Switch>
+      </div>
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 
-export default App;
+export default Sentry.withProfiler(App);

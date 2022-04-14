@@ -5,6 +5,9 @@ import FormWithButton from '../../molecules/formWithButton/FormWithButton';
 import dashboardImg from '../../images/dashboard.png';
 
 const TrialForm = () => {
+  const formHandler = (data) => {
+    console.log(data);
+  };
   return (
     <Row label="Trial Form" className="center">
       <div className={styles.TrialFormWrapper}>
@@ -20,6 +23,7 @@ const TrialForm = () => {
             inputType="email"
             inputPlaceholder="Enter your email here..."
             btnLabel="Get Free Trial"
+            onButtonClicked={formHandler}
           />
         </div>
         <img src={dashboardImg} />

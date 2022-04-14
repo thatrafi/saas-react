@@ -1,0 +1,8 @@
+@import '../../settings/variables.scss';
+.errorWrapper {
+  text-align: center;
+  margin-top: -8rem;
+  p {
+    @include fontStyle(2.5rem, 150%, 0);
+  }
+}
