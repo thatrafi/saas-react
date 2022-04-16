@@ -4,33 +4,22 @@ import Card from 'atoms/card/Card';
 import styles from 'molecules/tabAction/TabAction.module.css';
 
 const TabAction = (props) => {
-  const [buttons, setButtons] = useState(
-    props.tabs.map(function (value, index) {
-      return index === 0 ? { label: value, isSelected: '1' } : { label: value, isSelected: '0' };
-    })
-  );
-
-  const buttonHandler = (e) => {
-    let newArr = [...buttons];
-    let selectedIndex = newArr.findIndex((i) => i.label === e.target.outerText);
-    newArr.map((x) => {
-      x.isSelected = '0';
-      return x;
-    });
-    newArr[selectedIndex].isSelected = '1';
-    setButtons(newArr);
-    props.onTabClicked(buttons.find((b) => b.isSelected === '1').label);
-  };
+  const [isClicked, setisClicked] = useState(0);
   return (
     <div className={styles.tabActionCard}>
       <Card className="card fit row violet">
-        {buttons.map((btn, key) => (
+        {props.tabs.map((tab, key) => (
           <Button
             type="button"
-            className={`${btn.isSelected === '1' ? 'primary' : 'violet'} big rounded`}
-            onClick={buttonHandler}
+            className={`violet big rounded`}
+            onClickStyle={`primary big rounded`}
             key={key}
-            label={btn.label}
+            clicked={isClicked === key}
+            onClick={() => {
+              setisClicked(key);
+              props.onTabChanged(tab.id);
+            }}
+            label={tab.name}
           />
         ))}
       </Card>

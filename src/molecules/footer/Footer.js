@@ -37,6 +37,9 @@ const Footer = () => {
       ]
     }
   ];
+  const formhandler = (data) => {
+    console.log(data);
+  };
   return (
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContent}>
@@ -47,7 +50,7 @@ const Footer = () => {
           <NavBrand link="/" navBrand="finsweet-white.png" />
           <div className={styles.footerSubscribeSearch}>
             <h5>Subscribe to our Newslater</h5>
-            <FormWithButton type="primary" />
+            <FormWithButton type="primary" onButtonClicked={formhandler} />
           </div>
         </div>
       </div>
