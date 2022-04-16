@@ -1,5 +1,5 @@
 import React from 'react';
-import Features2 from '../../molecules/feature/Features2';
+import Features2 from 'molecules/feature/Features2';
 import styles from './ProductFeatures.module.css';
 
 const ProductFeatures = () => {

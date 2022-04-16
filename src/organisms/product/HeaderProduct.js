@@ -1,10 +1,10 @@
 import React from 'react';
-import Button from '../../atoms/button/Button';
-import InfoRow from '../../atoms/row/InfoRow';
-import Row from '../../atoms/row/Row';
-import TwoColumns from '../../atoms/row/TwoColumns';
+import Button from 'atoms/button/Button';
+import InfoRow from 'atoms/row/InfoRow';
+import Row from 'atoms/row/Row';
+import TwoColumns from 'atoms/row/TwoColumns';
 import styles from './HeaderProduct.module.css';
-import dashboardImg from '../../images/dashboard.png';
+import dashboardImg from 'images/dashboard.png';
 
 const HeaderProduct = () => {
   return (

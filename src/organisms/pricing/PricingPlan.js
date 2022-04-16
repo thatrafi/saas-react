@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Row from '../../atoms/row/Row';
-import PricingItem from '../../molecules/pricing/PricingItem';
-import TabAction from '../../molecules/tabAction/TabAction';
+import Row from 'atoms/row/Row';
+import PricingItem from 'molecules/pricing/PricingItem';
+import TabAction from 'molecules/tabAction/TabAction';
 import styles from './PricingPlan.module.css';
 
 const PricingPlan = () => {

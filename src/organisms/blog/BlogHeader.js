@@ -1,8 +1,8 @@
 import React from 'react';
-import InfoRow from '../../atoms/row/InfoRow';
-import Row from '../../atoms/row/Row';
-import TwoColumns from '../../atoms/row/TwoColumns';
-import RoundedImage from '../../atoms/image/RoundedImage';
+import InfoRow from 'atoms/row/InfoRow';
+import Row from 'atoms/row/Row';
+import TwoColumns from 'atoms/row/TwoColumns';
+import RoundedImage from 'atoms/image/RoundedImage';
 import styles from './BlogHeader.module.css';
 
 const BlogHeader = () => {

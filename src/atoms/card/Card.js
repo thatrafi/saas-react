@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Card.module.css';
-import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
+import styles from 'atoms/card/Card.module.css';
+import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Card = (props) => {
   const classes = MapPropsToStyles(styles, props.className);

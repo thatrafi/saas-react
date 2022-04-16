@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Ruler.module.css';
-import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
+import styles from 'atoms/ruler/Ruler.module.css';
+import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Ruler = (props) => {
   const classes = MapPropsToStyles(styles, props.type);

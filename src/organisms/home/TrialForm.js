@@ -1,8 +1,8 @@
 import React from 'react';
-import Row from '../../atoms/row/Row';
+import Row from 'atoms/row/Row';
 import styles from './TrialForm.module.css';
-import FormWithButton from '../../molecules/formWithButton/FormWithButton';
-import dashboardImg from '../../images/dashboard.png';
+import FormWithButton from 'molecules/formWithButton/FormWithButton';
+import dashboardImg from 'images/dashboard.png';
 
 const TrialForm = () => {
   const formHandler = (data) => {

@@ -1,7 +1,7 @@
 import React from 'react';
-import InfoRow from '../../atoms/row/InfoRow';
-import TwoColumns from '../../atoms/row/TwoColumns';
-import IconLabel from '../../molecules/iconlabel/IconLabel';
+import InfoRow from 'atoms/row/InfoRow';
+import TwoColumns from 'atoms/row/TwoColumns';
+import IconLabel from 'molecules/iconlabel/IconLabel';
 import styles from './InfoIcons.module.css';
 
 const InfoIcons = (props) => {

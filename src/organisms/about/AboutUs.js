@@ -1,6 +1,6 @@
 import React from 'react';
-import InfoRow from '../../atoms/row/InfoRow';
-import Row from '../../atoms/row/Row';
+import InfoRow from 'atoms/row/InfoRow';
+import Row from 'atoms/row/Row';
 import styles from './AboutUs.module.css';
 
 const AboutUs = () => {

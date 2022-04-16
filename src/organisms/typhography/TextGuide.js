@@ -1,5 +1,5 @@
 import React from 'react';
-import Row from '../../atoms/row/Row';
+import Row from 'atoms/row/Row';
 import styles from './TextGuide.module.css';
 
 const TextGuide = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Pallete from '../../atoms/pallete/Pallete';
-import Row from '../../atoms/row/Row';
+import Pallete from 'atoms/pallete/Pallete';
+import Row from 'atoms/row/Row';
 import styles from './ColorPallete.module.css';
 
 const ColorPallete = () => {

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import Button from '../../atoms/button/Button';
-import Input from '../../atoms/input/Input';
-import styles from './FormWithButton.module.css';
+import Button from 'atoms/button/Button';
+import Input from 'atoms/input/Input';
+import styles from 'molecules/formWithButton/FormWithButton.module.css';
 
 const FormWithButton = (props) => {
   const textboxRef = useRef('');

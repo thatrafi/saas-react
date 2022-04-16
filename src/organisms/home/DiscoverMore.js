@@ -1,6 +1,6 @@
 import React from 'react';
-import Row from '../../atoms/row/Row';
-import InfoIcons from '../infographic/InfoIcons';
+import Row from 'atoms/row/Row';
+import InfoIcons from 'organisms/infographic/InfoIcons';
 
 const DiscoverMore = (props) => {
   return (

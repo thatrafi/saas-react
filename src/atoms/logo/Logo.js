@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import defaultLogo from '../../images/logo/finsweet.png';
+import defaultLogo from 'images/logo/finsweet.png';
 
 // eslint-disable-next-line no-undef
-const images = require.context('../../images/logo', true);
+const images = require.context('images/logo', true);
 
 const Logo = (props) => {
   var logo = '';

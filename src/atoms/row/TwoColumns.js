@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './TwoColumns.module.css';
+import styles from 'atoms/row/TwoColumns.module.css';
 
 const TwoColumns = (props) => {
   return (
