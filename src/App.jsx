@@ -1,3 +1,4 @@
+import 'fake-db';
 import React, { Fragment } from 'react';
 import * as Sentry from '@sentry/react';
 import Footer from 'molecules/footer/Footer';

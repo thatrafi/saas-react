@@ -3,50 +3,25 @@ import Row from 'atoms/row/Row';
 import PricingItem from 'molecules/pricing/PricingItem';
 import TabAction from 'molecules/tabAction/TabAction';
 import styles from './PricingPlan.module.css';
+import axios from 'axios';
 
 const PricingPlan = () => {
   const [isSelected, setisSelected] = useState(1);
+  const [plans, setPlans] = useState([]);
+
   useEffect(() => {
     console.log(isSelected);
   }, [isSelected]);
-  const pricing = [
-    {
-      name: 'Regular',
-      subName: 'Starter plan',
-      features: [
-        { name: 'Limited Projects', isAvailable: true },
-        { name: 'Regular Support Business', isAvailable: true },
-        { name: '1 Month Free Trial', isAvailable: true },
-        { name: '3GB Storage', isAvailable: true },
-        { name: 'Ads Preview', isAvailable: true }
-      ],
-      price: 'Free'
-    },
-    {
-      name: 'Platinum',
-      subName: 'For the best results',
-      features: [
-        { name: 'Limited Projects', isAvailable: true },
-        { name: 'Regular Support Business', isAvailable: true },
-        { name: '1 Month Free Trial', isAvailable: true },
-        { name: '20GB Storage', isAvailable: true },
-        { name: 'Ads Preview', isAvailable: true }
-      ],
-      price: '$324'
-    },
-    {
-      name: 'Standard',
-      subName: 'Most popular',
-      features: [
-        { name: 'Limited Projects', isAvailable: true },
-        { name: 'Regular Support Business', isAvailable: true },
-        { name: '1 Month Free Trial', isAvailable: true },
-        { name: '10GB Storage', isAvailable: true },
-        { name: 'Ads Preview', isAvailable: true }
-      ],
-      price: '$234'
-    }
-  ];
+
+  useEffect(() => {
+    getPricingPlans();
+  }, []);
+
+  const getPricingPlans = async () => {
+    const { data } = await Promise.resolve(axios.get('/api/pricing/plans'));
+    setPlans(data);
+  };
+
   return (
     <Row label="Pricing Plan" className="center">
       <div className={styles.pricingPlansWrapper}>
@@ -54,8 +29,8 @@ const PricingPlan = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <TabAction tabs={['Monthly', 'Yearly']} onTabClicked={() => {}} />
         <div className={styles.plans}>
-          {pricing &&
-            pricing.map((price, key) => (
+          {plans &&
+            plans.map((price, key) => (
               <PricingItem
                 key={key}
                 selected={isSelected === key}
