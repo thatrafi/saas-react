@@ -13,7 +13,7 @@ const PricingPlan = () => {
   const [category, setCategory] = useState([]);
   const [filterBy, setFilteredBy] = useState(1);
   useEffect(() => {
-    console.log(isSelected);
+    // handler for user after pick the plan
   }, [isSelected]);
 
   useEffect(() => {

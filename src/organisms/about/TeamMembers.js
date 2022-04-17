@@ -4,7 +4,7 @@ import Row from 'atoms/row/Row';
 import Teams from './Teams';
 import styles from './TeamMembers.module.css';
 
-const TeamMembers = () => {
+const TeamMembers = (props) => {
   return (
     <Row>
       <div className={styles.membersWrapper}>
@@ -14,7 +14,7 @@ const TeamMembers = () => {
             desc="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore."
           />
         </div>
-        <Teams />
+        <Teams teams={props.teams} />
       </div>
     </Row>
   );
