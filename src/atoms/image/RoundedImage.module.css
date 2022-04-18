@@ -1,4 +1,8 @@
 .imgRounded {
+  border-radius: 1rem;
+}
+
+.full {
   border-radius: 50%;
 }
 
