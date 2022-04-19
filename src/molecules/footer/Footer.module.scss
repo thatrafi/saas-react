@@ -1,5 +1,5 @@
-@import 'settings/variables.scss';
-@import 'styles/colors.module.scss';
+@import '../../settings/variables.scss';
+@import '../../styles/colors.module.scss';
 
 .footerWrapper {
   width: 100%;
@@ -8,12 +8,20 @@
   flex-flow: column;
   gap: 5rem;
   padding: 5rem 0px;
+  @include responsive(mobile){
+    padding: 1rem 0px;
+  }
 }
 
 .footerContent {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  @include responsive(mobile){
+    flex-flow: column;
+    text-align: center;
+    gap: 2rem;
+  }
 }
 
 .footerSubscribe {
@@ -23,8 +31,13 @@
   a {
     margin: 0px 0px 20px 0px;
   }
-  h5 {
-    margin: 0;
+  @include responsive(mobile){
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
   }
 }
 

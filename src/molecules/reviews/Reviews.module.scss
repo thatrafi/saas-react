@@ -1,4 +1,9 @@
+@import '../../settings/variables.scss';
+
 .reviewsWrapper {
   gap: 20px;
   display: flex;
+  @include responsive(mobile){
+    flex-direction: column;
+  }
 }

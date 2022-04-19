@@ -1,3 +1,5 @@
+@import '../../settings/variables.scss';
+
 .twocolumns {
   display: flex;
   justify-content: center;
@@ -10,6 +12,12 @@
   flex: 1;
   display: flex;
   height: 100%;
+  @include responsive(phone) {
+    flex-direction: column;
+    img{
+      max-width: 20rem;
+    }
+  }
 }
 
 .columnWrapper div {

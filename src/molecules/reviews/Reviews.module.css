@@ -4,4 +4,13 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+@media only screen and (max-width: 720px) {
+  .reviewsWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=Reviews.module.css.map */

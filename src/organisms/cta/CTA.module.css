@@ -29,4 +29,10 @@
   width: 50%;
   gap: 3rem;
 }
+
+@media only screen and (max-width: 720px) {
+  .CTAContent {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=CTA.module.css.map */
