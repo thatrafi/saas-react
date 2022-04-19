@@ -13,10 +13,16 @@
 }
 
 .imgWrapper {
-  max-width: 1280px;
-  max-height: 512px;
+  max-width: 80rem;
+  max-height: 32rem;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+  .imgWrapper img {
+    width: 20rem;
+  }
 }
 
 .contentWrapper {
@@ -29,6 +35,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .contentWrapper {
+    padding: 0 0.5rem;
+  }
 }
 
 .quote {

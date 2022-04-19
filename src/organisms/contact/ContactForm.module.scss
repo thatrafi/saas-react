@@ -1,3 +1,5 @@
+@import '../../settings/variables.scss';
+
 .formWrapper {
   form {
     display: flex;
@@ -14,6 +16,9 @@
   h2,
   p {
     margin-bottom: 1rem;
+  }
+  @include responsive(mobile){
+    padding: 3rem 1rem;
   }
 }
 

@@ -1,4 +1,4 @@
-@import 'settings/variables.scss';
+@import '../../settings/variables.scss';
 
 .detailWrapper {
   display: flex;
@@ -8,10 +8,15 @@
 }
 
 .imgWrapper {
-  max-width: 1280px;
-  max-height: 512px;
+  max-width: 80rem;
+  max-height: 32rem;
   width: 100%;
   height: 100%;
+  @include responsive(mobile){
+    img{
+      width: 20rem;
+    }
+  }
 }
 
 .contentWrapper {
@@ -19,6 +24,9 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  @include responsive(mobile){
+    padding: 0 0.5rem;
+  }
 }
 
 .quote {

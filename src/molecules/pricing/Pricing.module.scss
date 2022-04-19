@@ -1,5 +1,5 @@
-@import 'styles/colors.module.scss';
-@import 'settings/variables.scss';
+@import '../../styles/colors.module.scss';
+@import '../../settings/variables.scss';
 
 .pricingHeader {
   display: flex;
@@ -15,6 +15,10 @@
   p {
     margin: 0;
   }
+
+  @include responsive(mobile){
+    padding: 10px 0 5px 10px;
+  }
 }
 
 .pricingContent {
@@ -22,12 +26,18 @@
   flex-direction: column;
   gap: 10px;
   padding: 30px 30px 20px 30px;
+  @include responsive(mobile){
+    gap: 0;
+  }
 }
 
 .pricingFeatures {
   display: flex;
   gap: 30px;
   flex-flow: column wrap;
+  @include responsive(mobile){
+    gap: 0;
+  }
 }
 
 .pricingDescription {
@@ -41,4 +51,7 @@
   gap: 4rem;
   text-align: center;
   flex-flow: column wrap;
+  @include responsive(mobile){
+    gap: 0;
+  }
 }
