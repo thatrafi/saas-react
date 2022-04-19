@@ -28,18 +28,32 @@
 }
 
 .green {
-  background-color: #D5F5EA;
+  background-color: #d5f5ea;
   color: #1d2130;
 }
 
 .orange {
-  background-color: #FFACAC;
+  background-color: #ffacac;
   color: #1d2130;
+}
+
+.blurGradient {
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e1 17.55%, #9bffa5 27.56%, #aed3ff 49.89%, #c9d4ef 56.53%, #cacffa 65.69%);
+}
+
+.labelGradient {
+  background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
 }
 
 .featuresCard {
   border-radius: 20px;
   padding: 4rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .featuresCard {
+    padding: 1rem;
+  }
 }
 
 .pink {

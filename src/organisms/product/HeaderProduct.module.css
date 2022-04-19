@@ -4,8 +4,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 10px;
 }
 
@@ -14,9 +14,24 @@
   height: 100%;
 }
 
+@media only screen and (max-width: 720px) {
+  .imageWrapper img {
+    margin-left: 3rem;
+  }
+}
+
 .contentWrapper {
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
   padding-right: 8rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .contentWrapper {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-right: 0rem;
+  }
 }
 /*# sourceMappingURL=HeaderProduct.module.css.map */

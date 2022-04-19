@@ -1,6 +1,13 @@
+@import '../../settings/variables.scss';
+
 .imgWrapper {
   display: flex;
   gap: 1.5rem;
+  @include responsive(mobile){
+    img{
+      width: 6rem;
+    }
+  }
 }
 
 .headerWrapper {

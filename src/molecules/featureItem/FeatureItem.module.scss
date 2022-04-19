@@ -1,7 +1,13 @@
+@import '../../settings/variables.scss';
+
 .featureItemWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
+  @include responsive(mobile){
+    align-items: center;
+    text-align: center;
+  };
 }

@@ -1,6 +1,11 @@
+@import '../../settings/variables.scss';
+
 .iconLabelWrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+  @include responsive(mobile) {
+    gap: 1rem;
+  }
 }

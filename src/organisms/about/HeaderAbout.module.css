@@ -5,6 +5,12 @@
   gap: 1.5rem;
 }
 
+@media only screen and (max-width: 720px) {
+  .imgWrapper img {
+    width: 6rem;
+  }
+}
+
 .headerWrapper p {
   max-inline-size: 60%;
   margin: 0 auto;

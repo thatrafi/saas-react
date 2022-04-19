@@ -1,7 +1,17 @@
+@import '../../settings/variables.scss';
+
 .membersWrapper {
   display: flex;
+  @include responsive(mobile){
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
 }
 
 .content {
   width: 60%;
+  @include responsive(mobile){
+    width: 100%;
+    text-align: center;
+  }
 }
