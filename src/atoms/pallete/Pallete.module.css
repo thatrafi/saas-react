@@ -44,4 +44,9 @@
 .labelGradient {
   background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
 }
-/*# sourceMappingURL=colors.module.css.map */
+
+.pallete {
+  width: 180px;
+  height: 128px;
+}
+/*# sourceMappingURL=Pallete.module.css.map */

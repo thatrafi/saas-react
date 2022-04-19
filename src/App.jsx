@@ -12,10 +12,11 @@ import BlogPage from './pages/Blog/BlogPage';
 import BlogPostPage from './pages/Blog Post/BlogPostPage';
 import AboutPage from './pages/About us/AboutPage';
 import ContactPage from './pages/Contact/ContactPage';
+import TypographyPage from './pages/Typography/TypographyPage';
 
 const App = () => {
   return (
-    <div>
+    <div className="main">
       <Header />
       <Switch>
         <Route path="/" exact>
@@ -38,6 +39,9 @@ const App = () => {
         </Route>
         <Route path="/contact">
           <ContactPage />
+        </Route>
+        <Route path="/typography">
+          <TypographyPage />
         </Route>
       </Switch>
       <Footer />

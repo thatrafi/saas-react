@@ -4,23 +4,20 @@
 
 .borderedItem div {
   border-left: 1px solid black;
+  padding-left: 2rem;
 }
 
 .borderedItem div:nth-child(1) {
   border-left: none;
 }
 
-.featuresWrapper {
-  margin-top: 3rem;
-}
-
 .featureItemWrapper {
   display: flex;
   flex-flow: row wrap;
-  padding: 3rem;
-  box-sizing: border-box;
+  gap: 3rem;
 }
 
 .featureItemWrapper div {
-  width: 380px;
+  width: 341px;
+  height: 176px;
 }

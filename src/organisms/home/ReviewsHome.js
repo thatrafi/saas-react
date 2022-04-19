@@ -6,7 +6,10 @@ import Reviews from '../../molecules/reviews/Reviews';
 const ReviewsHome = () => {
   return (
     <Row>
-      <InfoRow title="The stunning results our customers have experienced" position="center">
+      <InfoRow
+        titleWidth="42"
+        title="The stunning results our customers have experienced"
+        position="center">
         <Reviews />
       </InfoRow>
     </Row>

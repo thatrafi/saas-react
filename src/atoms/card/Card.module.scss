@@ -54,6 +54,7 @@ $widthQuestion: 672px;
 @mixin pricingCardStyle {
   width: 411px;
   height: 714px;
+  border: 4px solid transparent;
 }
 
 .pricing {

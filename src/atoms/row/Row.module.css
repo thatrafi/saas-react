@@ -50,9 +50,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3rem;
+  padding: 0 5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fit {

@@ -1,25 +1,31 @@
 @import '../../settings/variables.scss';
 @import '../../styles/colors.module.scss';
-header {
+.header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px;
+}
 
-  ul {
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
-    gap: 20px;
+.NavUl {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  gap: 20px;
+}
 
-    li {
-      list-style: none;
-    }
+.NavItem{
+  list-style: none;
+}
 
-    li a {
-      text-decoration: none;
-      color: $primaryColor;
-    }
-  }
+.NavItem a {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+.NavItem a:hover,
+.NavItem a.active {
+  color: $blueColor;
+  transition: all 0.5s;
 }

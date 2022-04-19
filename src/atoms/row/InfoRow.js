@@ -6,15 +6,14 @@ import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 const InfoRow = (props) => {
   const classes = MapPropsToStyles(styles, props.position);
   const headerStyle = { textAlign: props.position };
+  const widthStyle = { maxWidth: props.titleWidth + 'rem' };
   return (
     <div className={`${styles.row} ${classes}`}>
       <div className={styles.header} style={headerStyle}>
-        <span>{props.headline}</span>
-        <div className="container">
-          <h1>{props.title || 'Title'}</h1>
-          <p>{props.subtitle}</p>
-        </div>
-        <p>{props.desc}</p>
+        {props.headline && <span>{props.headline}</span>}
+        <div style={widthStyle}>{props.title && <h2>{props.title || 'Title'}</h2>}</div>
+        {props.subtitle && <p>{props.subtitle}</p>}
+        {props.desc && <p>{props.desc}</p>}
       </div>
       {props.children}
     </div>
