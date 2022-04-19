@@ -14,4 +14,4 @@ const Logos = () => {
   );
 };
 
-export default Logos;
+export default React.memo(Logos);

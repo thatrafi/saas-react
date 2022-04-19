@@ -16,4 +16,4 @@ const WhyUs = (props) => {
   );
 };
 
-export default WhyUs;
+export default React.memo(WhyUs);

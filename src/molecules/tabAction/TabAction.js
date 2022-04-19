@@ -4,6 +4,7 @@ import Card from 'atoms/card/Card';
 import styles from 'molecules/tabAction/TabAction.module.css';
 
 const TabAction = (props) => {
+  // console.log('Tab Action component');
   const [isClicked, setisClicked] = useState(0);
   return (
     <div className={styles.tabActionCard}>
@@ -27,4 +28,4 @@ const TabAction = (props) => {
   );
 };
 
-export default TabAction;
+export default React.memo(TabAction);

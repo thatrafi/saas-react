@@ -13,4 +13,4 @@ const ReviewsHome = (props) => {
   );
 };
 
-export default ReviewsHome;
+export default React.memo(ReviewsHome);

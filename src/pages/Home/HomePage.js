@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 import Row from 'atoms/row/Row';
 import Logos from 'molecules/logos/Logos';
@@ -14,6 +14,7 @@ import { whyUsData, discoverData } from 'data/homeData';
 
 const HomePage = () => {
   const [reviews, setReviews] = useState([]);
+  const [email, setEmail] = useState([]);
   useEffect(() => {
     getData();
   }, []);
@@ -21,9 +22,13 @@ const HomePage = () => {
     const { data } = await Promise.resolve(axios.get('/api/reviews'));
     setReviews(data);
   };
+  const formHandler = useCallback((data) => {
+    setEmail(data);
+    console.log(email);
+  }, []);
   return (
     <Fragment>
-      <TrialForm />
+      <TrialForm onFormSubmitted={formHandler} />
       <FeatureHome1 />
       <WhyUs infos={whyUsData} />
       <HomeInfoGraphic />

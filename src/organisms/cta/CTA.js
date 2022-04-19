@@ -5,6 +5,7 @@ import InfoRow from 'atoms/row/InfoRow';
 import styles from './CTA.module.css';
 
 const CTA = () => {
+  // console.log('cta component');
   return (
     <Row label="CTA" className="fit">
       <div className={styles.CTAWrapper}>
@@ -21,4 +22,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default React.memo(CTA);
