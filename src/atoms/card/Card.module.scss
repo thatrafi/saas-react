@@ -18,14 +18,20 @@ $widthQuestion: 672px;
 }
 
 .feature {
-  height: 344px;
+  height: 100%;
   width: 100%;
   padding: 3rem 3rem 1rem 3rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  @include responsive(pc) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .testimonial {
-  height: 404px;
+  height: 100%;
   width: 100%;
   border: 2px solid rgba($blueColor, 0.3);
 }
@@ -35,12 +41,12 @@ $widthQuestion: 672px;
   width: $widthQuestion;
   justify-content: space-between;
   align-items: center;
-  @include responsive(mobile){
+  @include responsive(mobile) {
     width: 100%;
-    h4{
+    h4 {
       font-size: small;
     }
-    p{
+    p {
       font-size: small;
     }
   }
@@ -58,7 +64,7 @@ $widthQuestion: 672px;
   align-content: flex-start;
   flex-flow: wrap;
   @include questionCardStyle;
-  @include responsive(mobile){
+  @include responsive(mobile) {
     max-height: 100%;
     padding: 20px 20px;
     box-sizing: border-box;
@@ -69,7 +75,7 @@ $widthQuestion: 672px;
   width: 100%;
   height: 714px;
   border: 4px solid transparent;
-  @include responsive(mobile){
+  @include responsive(mobile) {
     height: 514px;
   }
 }
@@ -87,7 +93,7 @@ $widthQuestion: 672px;
 .faq {
   width: 1280px;
   height: 100%;
-  @include responsive(mobile){
+  @include responsive(mobile) {
     width: 100%;
   }
 }

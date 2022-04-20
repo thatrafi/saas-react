@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px;
-  @include responsive(phone) {
+  @include responsive(mobile) {
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
   flex-flow: wrap row;
   align-items: center;
   gap: 1.25rem;
-  @include responsive(phone) {
+  @include responsive(mobile) {
     flex-flow: wrap row;
     justify-content: center;
     padding: 0;
@@ -30,7 +30,7 @@
 
 .NavItem{
   list-style: none;
-  @include responsive(phone) {
+  @include responsive(mobile) {
     button{
       height: 1rem;
       h6{
@@ -43,7 +43,7 @@
 .NavItem a {
   text-decoration: none;
   color: $primaryColor;
-  @include responsive(phone) {
+  @include responsive(mobile) {
     font-size: small;
   }
 }

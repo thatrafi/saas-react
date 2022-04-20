@@ -1,7 +1,6 @@
 @import '../../settings/variables.scss';
 
 @mixin nonBorderedMobileStyle {
-  flex-direction: column;
   height: fit-content;
   gap: 1rem;
   text-align: center;
@@ -9,7 +8,6 @@
 }
 
 @mixin borderedMobileStyle {
-  flex-direction: column;
   height: fit-content;
   padding-left: 1.5rem;
   gap: 1rem;
@@ -23,19 +21,12 @@
   @include responsive(mobile) {
     @include nonBorderedMobileStyle();
   }
-  @include responsive(tablet) {
-    @include nonBorderedMobileStyle();
-  }
 }
 
 .borderedItem div {
   border-left: 1px solid black;
   padding-left: 2rem;
   @include responsive(mobile) {
-    @include borderedMobileStyle();
-  }
-
-  @include responsive(tablet) {
     @include borderedMobileStyle();
   }
 }

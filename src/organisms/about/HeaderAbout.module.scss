@@ -3,9 +3,17 @@
 .imgWrapper {
   display: flex;
   gap: 1.5rem;
-  @include responsive(mobile){
+  img{
+    width: 6rem;
+  }
+  @include responsive(tablet){
     img{
-      width: 6rem;
+      width: 15rem;
+    }
+  }
+  @include responsive(pc){
+    img{
+      width: 100%;
     }
   }
 }

@@ -14,9 +14,15 @@
   max-width: 64rem;
 }
 
-@media only screen and (max-width: 720px) {
+.TrialFormWrapper img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
   .TrialFormWrapper img {
-    max-width: 20rem;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 
@@ -35,14 +41,20 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  max-width: 48rem;
+  max-width: 24rem;
   gap: 2rem;
   margin: 0;
 }
 
-@media only screen and (max-width: 720px) {
+@media (min-width: 720px) and (max-width: 1023px) {
   .TrialFormContent {
-    max-width: 24rem;
+    max-width: 36rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .TrialFormContent {
+    max-width: 48rem;
   }
 }
 /*# sourceMappingURL=TrialForm.module.css.map */

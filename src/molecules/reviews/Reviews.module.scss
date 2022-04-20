@@ -3,7 +3,8 @@
 .reviewsWrapper {
   gap: 20px;
   display: flex;
-  @include responsive(mobile){
-    flex-direction: column;
+  flex-direction: column;
+  @include responsive(pc){
+    flex-direction: row;
   }
 }

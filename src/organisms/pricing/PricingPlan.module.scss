@@ -11,9 +11,9 @@
 
 .plans {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
-  @include responsive(mobile){
-      flex-direction: column;
+  @include responsive(pc) {
+    flex-direction: row;
   }
 }
