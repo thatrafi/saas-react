@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../atoms/card/Card';
 import ReviewItem from '../reviewItem/ReviewItem';
-import styles from './Reviews.module.css';
+import styles from './Reviews.module.scss';
 
 const Reviews = () => {
   return (

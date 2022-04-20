@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './InfoRow.module.css';
+import styles from './InfoRow.module.scss';
 import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
 const InfoRow = (props) => {

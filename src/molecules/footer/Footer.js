@@ -2,7 +2,7 @@ import React from 'react';
 import Ruler from '../../atoms/ruler/Ruler';
 import NavBrand from '../brand/NavBrand';
 import FormWithButton from '../formWithButton/FormWithButton';
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import FooterLink from './FooterLink';
 import Icon from '../../atoms/icon/Icon';
 

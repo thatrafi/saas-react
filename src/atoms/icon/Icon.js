@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './Icon.module.css';
+import styles from './Icon.module.scss';
 import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 // eslint-disable-next-line no-undef
 const images = require.context('../../images/icon', true);
