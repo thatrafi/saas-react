@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './RoundedImage.module.css';
+import styles from './RoundedImage.module.scss';
 // eslint-disable-next-line no-undef
 const images = require.context('../../images', true);
 

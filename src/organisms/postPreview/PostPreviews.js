@@ -1,6 +1,6 @@
 import React from 'react';
 import PostPreviewItem from './PostPreviewItem';
-import styles from './PostPreviewStyle.module.css';
+import styles from './PostPreviewStyle.module.scss';
 import { truncateString } from '../../helper/StringHelper';
 
 const PostPreviews = (props) => {

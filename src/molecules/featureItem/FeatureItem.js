@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from '../../atoms/icon/Icon';
-import styles from './FeatureItem.module.css';
+import styles from './FeatureItem.module.scss';
 
 const FeatureItem = (props) => {
   return (

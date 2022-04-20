@@ -5,7 +5,7 @@ import IconLabel from '../../molecules/iconlabel/IconLabel';
 import Input from '../../atoms/input/Input';
 import Button from '../../atoms/button/Button';
 import { contactData } from '../../data/contactData';
-import styles from './ContactForm.module.css';
+import styles from './ContactForm.module.scss';
 import TextArea from '../../atoms/input/TextArea';
 
 const ContactForm = (props) => {

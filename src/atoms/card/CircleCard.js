@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './CircleCard.module.css';
+import styles from './CircleCard.module.scss';
 
 import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 

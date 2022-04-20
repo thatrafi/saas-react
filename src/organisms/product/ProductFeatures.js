@@ -1,6 +1,6 @@
 import React from 'react';
 import Features2 from '../../molecules/feature/Features2';
-import styles from './ProductFeatures.module.css';
+import styles from './ProductFeatures.module.scss';
 
 const ProductFeatures = () => {
   const features1 = [
