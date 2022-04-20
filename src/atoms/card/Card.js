@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'atoms/card/Card.module.css';
+import styles from 'atoms/card/Card.module.scss';
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Card = (props) => {

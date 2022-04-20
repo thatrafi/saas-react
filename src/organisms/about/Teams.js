@@ -1,6 +1,6 @@
 import React from 'react';
 import TeamItem from 'molecules/team/TeamItem';
-import styles from './Teams.module.css';
+import styles from './Teams.module.scss';
 import { teamData } from 'data/aboutData';
 
 const Teams = (props) => {

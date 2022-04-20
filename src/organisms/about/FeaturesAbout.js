@@ -2,7 +2,7 @@ import React from 'react';
 import InfoRow from 'atoms/row/InfoRow';
 import Row from 'atoms/row/Row';
 import Features2 from 'molecules/feature/Features2';
-import styles from './FeaturesAbout.module.css';
+import styles from './FeaturesAbout.module.scss';
 import { featuresAbout } from 'data/aboutData';
 
 const FeaturesAbout = (props) => {

@@ -3,7 +3,7 @@ import Card from 'atoms/card/Card';
 import Icon from 'atoms/icon/Icon';
 import IconLabel from 'molecules/iconlabel/IconLabel';
 import Button from 'atoms/button/Button';
-import styles from 'molecules/pricing/Pricing.module.css';
+import styles from 'molecules/pricing/Pricing.module.scss';
 
 const PricingItem = (props) => {
   // console.log('pricing item component');

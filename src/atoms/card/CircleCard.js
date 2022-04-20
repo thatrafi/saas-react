@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from 'atoms/card/CircleCard.module.css';
+import styles from 'atoms/card/CircleCard.module.scss';
 
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 

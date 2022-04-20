@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Row from 'atoms/row/Row';
-import styles from './ErrorPage.module.css';
+import styles from './ErrorPage.module.scss';
 
 const ErrorPage = () => {
   const logoName = '{finsweet.';
