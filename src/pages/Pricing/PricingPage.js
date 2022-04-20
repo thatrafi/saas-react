@@ -1,5 +1,5 @@
-import React, { Fragment, useCallback, useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
+import React, { Fragment, useCallback, useEffect, useState, useMemo } from 'react';
 import CTA from 'organisms/cta/CTA';
 import PricingFAQ from 'organisms/pricing/PricingFAQ';
 import PricingPlan from 'organisms/pricing/PricingPlan';
