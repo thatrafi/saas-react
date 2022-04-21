@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'atoms/card/Card';
-import styles from 'molecules/reviewItem/ReviewItem.module.css';
+import styles from 'molecules/reviewItem/ReviewItem.module.scss';
 import RoundedImage from 'atoms/image/RoundedImage';
 
 const ReviewItem = (props) => {
