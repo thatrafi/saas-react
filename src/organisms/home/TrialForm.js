@@ -1,6 +1,6 @@
 import React from 'react';
 import Row from 'atoms/row/Row';
-import styles from './TrialForm.module.css';
+import styles from './TrialForm.module.scss';
 import FormWithButton from 'molecules/formWithButton/FormWithButton';
 import dashboardImg from 'images/dashboard.png';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'atoms/row/Row.module.css';
+import styles from 'atoms/row/Row.module.scss';
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Row = (props) => {
