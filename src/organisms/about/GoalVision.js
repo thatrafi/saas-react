@@ -1,7 +1,7 @@
 import React from 'react';
-import Row from '../../atoms/row/Row';
-import TwoColumns from '../../atoms/row/TwoColumns';
-import InfoRow from '../../atoms/row/InfoRow';
+import Row from 'atoms/row/Row';
+import TwoColumns from 'atoms/row/TwoColumns';
+import InfoRow from 'atoms/row/InfoRow';
 
 const GoalVision = () => {
   return (

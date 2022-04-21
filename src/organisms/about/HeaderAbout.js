@@ -1,7 +1,7 @@
 import React from 'react';
-import RoundedImage from '../../atoms/image/RoundedImage';
-import InfoRow from '../../atoms/row/InfoRow';
-import styles from './HeaderAbout.module.scss';
+import RoundedImage from 'atoms/image/RoundedImage';
+import InfoRow from 'atoms/row/InfoRow';
+import styles from './HeaderAbout.module.css';
 
 const HeaderAbout = () => {
   return (

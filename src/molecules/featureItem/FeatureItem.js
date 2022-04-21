@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from '../../atoms/icon/Icon';
-import styles from './FeatureItem.module.scss';
+import Icon from 'atoms/icon/Icon';
+import styles from 'molecules/featureItem/FeatureItem.module.css';
 
 const FeatureItem = (props) => {
   return (

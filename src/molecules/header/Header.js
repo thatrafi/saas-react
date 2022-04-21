@@ -1,9 +1,9 @@
 import React from 'react';
-import NavBrand from '../brand/NavBrand';
-import Button from '../../atoms/button/Button';
+import NavBrand from 'molecules/brand/NavBrand';
+import Button from 'atoms/button/Button';
 import { NavLink } from 'react-router-dom';
 
-import styles from './Header.module.scss';
+import styles from 'molecules/header/Header.module.css';
 
 const Header = () => {
   return (

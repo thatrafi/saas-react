@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../../atoms/logo/Logo';
-import styles from './Logos.module.scss';
+import Logo from 'atoms/logo/Logo';
+import styles from 'molecules/logos/Logos.module.css';
 
 const Logos = () => {
   return (

@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import Row from '../../atoms/row/Row';
-import Logos from '../../molecules/logos/Logos';
-import HeaderProduct from '../../organisms/product/HeaderProduct';
-import ProductFeatures from '../../organisms/product/ProductFeatures';
-import InfoGraphic from '../../organisms/infographic/InfoGraphic';
-import FeatureHome2 from '../../organisms/home/FeatureHome2';
-import CTA from '../../organisms/cta/CTA';
+import Row from 'atoms/row/Row';
+import Logos from 'molecules/logos/Logos';
+import HeaderProduct from 'organisms/product/HeaderProduct';
+import ProductFeatures from 'organisms/product/ProductFeatures';
+import InfoGraphic from 'organisms/infographic/InfoGraphic';
+import FeatureHome2 from 'organisms/home/FeatureHome2';
+import CTA from 'organisms/cta/CTA';
 
 const ProductPage = () => {
   return (

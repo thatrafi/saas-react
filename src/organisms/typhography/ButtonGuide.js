@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../atoms/button/Button';
-import Row from '../../atoms/row/Row';
-import styles from './ButtonGuide.module.scss';
+import Button from 'atoms/button/Button';
+import Row from 'atoms/row/Row';
+import styles from './ButtonGuide.module.css';
 
 const ButtonGuide = () => {
   return (

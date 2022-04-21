@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../../atoms/card/Card';
-import FeatureItem from '../featureItem/FeatureItem';
-import styles from './Features.module.scss';
+import Card from 'atoms/card/Card';
+import FeatureItem from 'molecules/featureItem/FeatureItem';
+import styles from 'molecules/feature/Features.module.css';
 
 const Features = (props) => {
   return (
