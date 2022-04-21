@@ -2,7 +2,7 @@ import React from 'react';
 import Ruler from 'atoms/ruler/Ruler';
 import NavBrand from 'molecules/brand/NavBrand';
 import FormWithButton from 'molecules/formWithButton/FormWithButton';
-import styles from 'molecules/footer/Footer.module.css';
+import styles from 'molecules/footer/Footer.module.scss';
 import FooterLink from 'molecules/footer/FooterLink';
 import Icon from 'atoms/icon/Icon';
 
