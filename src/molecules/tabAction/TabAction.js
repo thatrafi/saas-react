@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'atoms/button/Button';
 import Card from 'atoms/card/Card';
-import styles from 'molecules/tabAction/TabAction.module.css';
+import styles from 'molecules/tabAction/TabAction.module.scss';
 
 const TabAction = (props) => {
   const [isClicked, setisClicked] = useState(0);

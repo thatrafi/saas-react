@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'molecules/iconlabel/IconLabel.module.css';
+import styles from 'molecules/iconlabel/IconLabel.module.scss';
 import CircleCard from 'atoms/card/CircleCard';
 import Icon from 'atoms/icon/Icon';
 

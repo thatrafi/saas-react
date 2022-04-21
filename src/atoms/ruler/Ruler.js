@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'atoms/ruler/Ruler.module.css';
+import styles from 'atoms/ruler/Ruler.module.scss';
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Ruler = (props) => {

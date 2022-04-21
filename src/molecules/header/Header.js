@@ -3,7 +3,7 @@ import NavBrand from 'molecules/brand/NavBrand';
 import Button from 'atoms/button/Button';
 import { NavLink } from 'react-router-dom';
 
-import styles from 'molecules/header/Header.module.css';
+import styles from 'molecules/header/Header.module.scss';
 
 const Header = () => {
   return (
