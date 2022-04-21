@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './IconLabel.module.css';
+import styles from './IconLabel.module.scss';
 import CircleCard from '../../atoms/card/CircleCard';
 import Icon from '../../atoms/icon/Icon';
 

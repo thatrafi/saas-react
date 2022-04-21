@@ -3,7 +3,7 @@ import * as Sentry from '@sentry/react';
 import Footer from './molecules/footer/Footer';
 import Header from './molecules/header/Header';
 
-import './styles/style.css';
+import './styles/style.scss';
 import PricingPage from './pages/Pricing/PricingPage';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';

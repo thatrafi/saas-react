@@ -3,7 +3,7 @@ import NavBrand from '../brand/NavBrand';
 import Button from '../../atoms/button/Button';
 import { NavLink } from 'react-router-dom';
 
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 const Header = () => {
   return (

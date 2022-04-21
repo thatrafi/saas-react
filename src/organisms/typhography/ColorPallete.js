@@ -1,7 +1,7 @@
 import React from 'react';
 import Pallete from '../../atoms/pallete/Pallete';
 import Row from '../../atoms/row/Row';
-import styles from './ColorPallete.module.css';
+import styles from './ColorPallete.module.scss';
 
 const ColorPallete = () => {
   const colors = ['primary', 'blue', 'violet', 'labelGradient', 'blurGradient', 'white'];

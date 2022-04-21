@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../atoms/card/Card';
 import RoundedImage from '../../atoms/image/RoundedImage';
-import styles from './TeamItem.module.css';
+import styles from './TeamItem.module.scss';
 
 const TeamItem = (props) => {
   return (

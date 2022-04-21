@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Pallete.module.css';
+import styles from './Pallete.module.scss';
 import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
 const Pallete = (props) => {

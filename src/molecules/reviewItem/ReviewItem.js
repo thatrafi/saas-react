@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../atoms/card/Card';
 import CircleCard from '../../atoms/card/CircleCard';
-import styles from './ReviewItem.module.css';
+import styles from './ReviewItem.module.scss';
 import image from '../../images/beardedman.png';
 
 const ReviewItem = () => {

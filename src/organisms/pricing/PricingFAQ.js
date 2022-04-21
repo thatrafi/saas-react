@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../../atoms/card/Card';
 import Row from '../../atoms/row/Row';
 import QuestionItem from '../../molecules/question/QuestionItem';
-import styles from './PricingFAQ.module.css';
+import styles from './PricingFAQ.module.scss';
 
 const PricingFAQ = () => {
   return (

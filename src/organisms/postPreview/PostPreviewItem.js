@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import RoundedImage from '../../atoms/image/RoundedImage';
-import styles from './PostPreviewStyle.module.css';
+import styles from './PostPreviewStyle.module.scss';
 
 const PostPreviewItem = (props) => {
   return (
