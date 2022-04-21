@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from 'molecules/footer/FooterLink.module.css';
+import styles from 'molecules/footer/FooterLink.module.scss';
 
 const FooterLink = (props) => {
   return (

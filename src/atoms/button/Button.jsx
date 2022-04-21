@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
-import styles from 'atoms/button/Button.module.css';
+import styles from 'atoms/button/Button.module.scss';
 
 const Button = (props) => {
   const { type, className, label, onClick } = props;

@@ -2,7 +2,7 @@ import React from 'react';
 import RoundedImage from 'atoms/image/RoundedImage';
 import InfoRow from 'atoms/row/InfoRow';
 import Row from 'atoms/row/Row';
-import styles from './PostDetail.module.css';
+import styles from './PostDetail.module.scss';
 
 const PostDetail = () => {
   return (

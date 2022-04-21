@@ -1,6 +1,6 @@
 import React from 'react';
 import FeatureItem from 'molecules/featureItem/FeatureItem';
-import styles from 'molecules/feature/Features.module.css';
+import styles from 'molecules/feature/Features.module.scss';
 
 const Features2 = (props) => {
   return (

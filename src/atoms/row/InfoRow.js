@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from 'atoms/row/InfoRow.module.css';
+import styles from 'atoms/row/InfoRow.module.scss';
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const InfoRow = (props) => {

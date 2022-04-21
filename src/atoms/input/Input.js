@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'atoms/input/Input.module.css';
+import styles from 'atoms/input/Input.module.scss';
 import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Input = React.forwardRef((props, ref) => {
