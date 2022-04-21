@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Button from 'atoms/button/Button';
-import Card from 'atoms/card/Card';
-import styles from 'molecules/tabAction/TabAction.module.css';
+import Button from '../../atoms/button/Button';
+import Card from '../../atoms/card/Card';
+import styles from './TabAction.module.scss';
 
 const TabAction = (props) => {
   const [buttons, setButtons] = useState(

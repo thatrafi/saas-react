@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from 'atoms/button/Button';
-import InfoGraphic from 'organisms/infographic/InfoGraphic';
-import Row from 'atoms/row/Row';
+import Button from '../../atoms/button/Button';
+import InfoGraphic from '../../organisms/infographic/InfoGraphic';
+import Row from '../../atoms/row/Row';
 
 const HomeInfoGraphic = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import TeamItem from 'molecules/team/TeamItem';
-import styles from './Teams.module.css';
-import { teamData } from 'data/aboutData';
+import TeamItem from '../../molecules/team/TeamItem';
+import styles from './Teams.module.scss';
+import { teamData } from '../../data/aboutData';
 
 const Teams = () => {
   return (

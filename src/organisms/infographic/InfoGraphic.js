@@ -1,10 +1,10 @@
 import React from 'react';
-import InfoRow from 'atoms/row/InfoRow';
-import TwoColumns from 'atoms/row/TwoColumns';
-import graphic1 from 'images/graphic1.png';
+import InfoRow from '../../atoms/row/InfoRow';
+import TwoColumns from '../../atoms/row/TwoColumns';
+import graphic1 from '../../images/graphic1.png';
 // eslint-disable-next-line no-undef
-const images = require.context('images', true);
-import './InfoGraphic.module.css';
+const images = require.context('../../images', true);
+import './InfoGraphic.module.scss';
 
 const InfoGraphic = (props) => {
   var image = '';

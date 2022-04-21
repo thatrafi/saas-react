@@ -1,6 +1,6 @@
 import React from 'react';
-import Row from 'atoms/row/Row';
-import styles from './TextGuide.module.css';
+import Row from '../../atoms/row/Row';
+import styles from './TextGuide.module.scss';
 
 const TextGuide = () => {
   return (

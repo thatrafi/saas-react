@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Row from 'atoms/row/Row';
+import Row from '../../atoms/row/Row';
 import styles from './ErrorPage.module.css';
 
 const ErrorPage = () => {

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import CTA from 'organisms/cta/CTA';
-import PostDetail from 'organisms/postDetail/PostDetail';
-import ReadMorePosts from 'organisms/postDetail/ReadMorePosts';
+import CTA from '../../organisms/cta/CTA';
+import PostDetail from '../../organisms/postDetail/PostDetail';
+import ReadMorePosts from '../../organisms/postDetail/ReadMorePosts';
 
 const BlogPostPage = () => {
   return (

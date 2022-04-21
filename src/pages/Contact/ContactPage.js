@@ -1,8 +1,8 @@
 import React from 'react';
-import Row from 'atoms/row/Row';
-import ContactForm from 'organisms/contact/ContactForm';
-import InfoRow from 'atoms/row/InfoRow';
-import CTA from 'organisms/cta/CTA';
+import Row from '../../atoms/row/Row';
+import ContactForm from '../../organisms/contact/ContactForm';
+import InfoRow from '../../atoms/row/InfoRow';
+import CTA from '../../organisms/cta/CTA';
 
 const ContactPage = () => {
   const formHandler = (data) => {

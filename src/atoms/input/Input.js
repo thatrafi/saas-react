@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from 'atoms/input/Input.module.css';
-import { MapPropsToStyles } from 'helper/MapPropsToStyles';
+import styles from './Input.module.scss';
+import { MapPropsToStyles } from '../../helper/MapPropsToStyles';
 
 const Input = React.forwardRef((props, ref) => {
   const { type, name, value, placeholder, className, onChange, onClick } = props;

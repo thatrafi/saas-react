@@ -1,7 +1,7 @@
 import React from 'react';
-import Row from 'atoms/row/Row';
-import InfoRow from 'atoms/row/InfoRow';
-import Features from 'molecules/feature/Features';
+import Row from '../../atoms/row/Row';
+import InfoRow from '../../atoms/row/InfoRow';
+import Features from '../../molecules/feature/Features';
 
 const FeatureHome2 = () => {
   const features2 = [

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Card from 'atoms/card/Card';
-import Icon from 'atoms/icon/Icon';
-import styles from 'molecules/question/QuestionItem.module.css';
+import Card from '../../atoms/card/Card';
+import Icon from '../../atoms/icon/Icon';
+import styles from './QuestionItem.module.scss';
 
 const QuestionItem = (props) => {
   const [clicked, setClicked] = useState(false);

@@ -1,4 +1,4 @@
-import { blogPostActions } from 'reducers/blogPostReducer';
+import { blogPostActions } from '../reducers/blogPostReducer';
 
 const BASE_URL = 'https://blog-app-react-fb813-default-rtdb.asia-southeast1.firebasedatabase.app';
 
