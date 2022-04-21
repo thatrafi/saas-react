@@ -6,7 +6,7 @@ import styles from './CTA.module.scss';
 
 const CTA = () => {
   return (
-    <Row label="CTA">
+    <Row label="CTA" className="fit">
       <div className={styles.CTAWrapper}>
         <div className={styles.CTAContent}>
           <InfoRow
