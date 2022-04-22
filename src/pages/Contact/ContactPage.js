@@ -3,6 +3,7 @@ import Row from 'atoms/row/Row';
 import ContactForm from 'organisms/contact/ContactForm';
 import InfoRow from 'atoms/row/InfoRow';
 import CTA from 'organisms/cta/CTA';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const ContactPage = () => {
   const formHandler = (data) => {
@@ -18,4 +19,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default withErrorBoundary(ContactPage);

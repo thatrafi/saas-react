@@ -7,6 +7,7 @@ import ProductFeatures from 'organisms/product/ProductFeatures';
 import InfoGraphic from 'organisms/infographic/InfoGraphic';
 import FeatureHome2 from 'organisms/home/FeatureHome2';
 import CTA from 'organisms/cta/CTA';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const ProductPage = () => {
   const [features, setFeatures] = useState([]);
@@ -52,4 +53,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default withErrorBoundary(ProductPage);

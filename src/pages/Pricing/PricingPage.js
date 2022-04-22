@@ -3,6 +3,7 @@ import React, { Fragment, useCallback, useEffect, useState, useMemo } from 'reac
 import CTA from 'organisms/cta/CTA';
 import PricingFAQ from 'organisms/pricing/PricingFAQ';
 import PricingPlan from 'organisms/pricing/PricingPlan';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const PricingPage = () => {
   // console.log('princing page component');
@@ -35,4 +36,4 @@ const PricingPage = () => {
   );
 };
 
-export default PricingPage;
+export default withErrorBoundary(PricingPage);
