@@ -19,10 +19,10 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.errorInfo) {
       // Error path
-      console.log(this.state.errorInfo);
       return <ErrorPage />;
     }
     // Normally, just render children
+
     return this.props.children;
   }
 }

@@ -26,6 +26,7 @@ const PricingPage = () => {
     // setSelectedPlan(data);
     console.log(data);
   }, []);
+
   return (
     <Fragment>
       {/* {selectedPlan && <p>{selectedPlan}</p>} */}

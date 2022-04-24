@@ -11,6 +11,7 @@ const RoundedImage = (props) => {
   } catch (error) {
     console.log(error);
   }
+
   return <img src={img} className={`${styles.imgRounded} ${classes}`} />;
 };
 

@@ -8,6 +8,7 @@ const FormWithButton = (props) => {
   const btnHandler = () => {
     props.onButtonClicked(textboxRef.current.value);
   };
+
   return (
     <div className={styles.search}>
       <Input

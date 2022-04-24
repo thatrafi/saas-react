@@ -9,6 +9,7 @@ const ContactPage = () => {
   const formHandler = (data) => {
     console.log(data);
   };
+
   return (
     <Row>
       <InfoRow position="center" title="Get in touch with us">

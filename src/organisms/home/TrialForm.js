@@ -9,6 +9,7 @@ const TrialForm = (props) => {
   const formHandler = (data) => {
     props.onFormSubmitted(data);
   };
+
   return (
     <Row label="Trial Form" className="center">
       <div className={styles.TrialFormWrapper}>

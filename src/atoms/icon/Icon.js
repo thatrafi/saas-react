@@ -14,6 +14,7 @@ const Icon = (props) => {
     console.log(error);
   }
   const classes = MapPropsToStyles(styles, props.size);
+
   return props.link ? (
     <Link to={{ pathname: props.link }} target="_blank">
       <img src={icon} className={classes} onClick={props.onclick} />

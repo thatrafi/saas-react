@@ -27,6 +27,7 @@ const ContactForm = (props) => {
     };
     props.onButtonClicked(formData);
   };
+
   return (
     <Card className="full violet rounded">
       <div className={styles.contactForm}>

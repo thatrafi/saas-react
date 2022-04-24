@@ -12,6 +12,7 @@ export const getAllBlogPosts = () => {
         throw new Error('Getting posts data failed!');
       }
       const data = response.json();
+
       return data;
     };
     try {
@@ -19,6 +20,7 @@ export const getAllBlogPosts = () => {
       let newArr = [];
       Object.keys(responseData).map((item) => {
         responseData[item]['id'] = item;
+
         return newArr.push(responseData[item]);
       });
       dispatch(blogPostActions.setPosts({ data: newArr }));

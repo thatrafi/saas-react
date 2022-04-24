@@ -40,6 +40,7 @@ const Footer = () => {
   const formhandler = (data) => {
     console.log(data);
   };
+
   return (
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContent}>

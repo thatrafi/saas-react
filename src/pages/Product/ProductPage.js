@@ -23,6 +23,7 @@ const ProductPage = () => {
     setFeatures(features);
     setInfoGraphics(infographics);
   };
+
   return (
     <Fragment>
       <HeaderProduct />

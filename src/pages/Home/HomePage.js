@@ -27,6 +27,7 @@ const HomePage = () => {
     setEmail(data);
     console.log(email);
   }, []);
+
   return (
     <Fragment>
       <TrialForm onFormSubmitted={formHandler} />

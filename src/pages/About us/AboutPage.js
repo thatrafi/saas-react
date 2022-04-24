@@ -22,6 +22,7 @@ const AboutPage = () => {
     setFeatures(features);
     setTeams(teams);
   };
+
   return (
     <Fragment>
       <HeaderAbout />

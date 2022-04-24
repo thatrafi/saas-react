@@ -12,6 +12,7 @@ const Logo = (props) => {
   } catch (error) {
     console.log(error);
   }
+
   return props.link ? (
     <Link to={props.link}>
       <img src={logo || defaultLogo} />
