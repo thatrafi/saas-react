@@ -16,12 +16,14 @@ const ProductPage = () => {
     getData();
   }, []);
   const getData = async () => {
-    const [{ data: features }, { data: infographics }] = await Promise.all([
-      axios.get('/api/product/features'),
-      axios.get('/api/product/infographics')
-    ]);
-    setFeatures(features);
-    setInfoGraphics(infographics);
+    await Promise.all([axios.get('/api/product/features'), axios.get('/api/product/infographics')])
+      .then(function ([{ data: features }, { data: infographics }]) {
+        setFeatures(features);
+        setInfoGraphics(infographics);
+      })
+      .catch((error) => {
+        console.log(`The unknown error has occurred: ${error}`);
+      });
   };
   return (
     <Fragment>

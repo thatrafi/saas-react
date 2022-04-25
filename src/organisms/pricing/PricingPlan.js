@@ -7,7 +7,7 @@ import { filteredArray } from 'helper/ArrayHelper';
 
 const PricingPlan = (props) => {
   // console.log('Pricing Plans component');
-  const [isSelected, setisSelected] = useState(`plan${0}`);
+  const [isSelected, setisSelected] = useState('plan0');
   const [filterBy, setFilteredBy] = useState(1);
   const filteredPlans = useMemo(() => {
     return props.plans.filter((el) => el.category.id === filterBy || el.category.id === 0);
