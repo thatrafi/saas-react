@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Row from 'atoms/row/Row';
 import PricingItem from 'molecules/pricing/PricingItem';
 import TabAction from 'molecules/tabAction/TabAction';
-import styles from './PricingPlan.module.css';
+import styles from './PricingPlan.module.scss';
 import axios from 'axios';
 import { filteredArray } from 'helper/ArrayHelper';
 
