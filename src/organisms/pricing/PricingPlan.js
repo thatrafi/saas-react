@@ -7,7 +7,7 @@ import axios from 'axios';
 import { filteredArray } from 'helper/ArrayHelper';
 
 const PricingPlan = () => {
-  const [isSelected, setisSelected] = useState(`plan${0}`);
+  const [isSelected, setisSelected] = useState('plan0');
   const [plans, setPlans] = useState([]);
   const [filteredPlans, setFilteredPlans] = useState([]);
   const [category, setCategory] = useState([]);
