@@ -3,14 +3,11 @@ import Row from 'atoms/row/Row';
 import InfoRow from 'atoms/row/InfoRow';
 import Reviews from 'molecules/reviews/Reviews';
 
-const ReviewsHome = () => {
+const ReviewsHome = (props) => {
   return (
     <Row>
-      <InfoRow
-        titleWidth="42"
-        title="The stunning results our customers have experienced"
-        position="center">
-        <Reviews />
+      <InfoRow titleWidth="42" title={props.title || 'Title'} position="center">
+        <Reviews reviews={props.reviews} />
       </InfoRow>
     </Row>
   );

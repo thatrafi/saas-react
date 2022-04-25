@@ -12,9 +12,7 @@ const AllPosts = () => {
     dispatch(getAllBlogPosts());
   }, []);
 
-  useEffect(() => {
-    console.log(posts);
-  }, [posts]);
+  useEffect(() => {}, [posts]);
 
   return (
     <Row>

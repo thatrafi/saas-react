@@ -10,7 +10,7 @@ const QuestionItem = (props) => {
   };
   return (
     <Card className={`${clicked ? 'questionExpand' : 'question'} row white`}>
-      <h3>{props.question || 'Question Item'}</h3>
+      <h4>{props.question || 'Question Item'}</h4>
       <Icon src={clicked ? 'Minus.png' : 'Expander.png'} size="small" onclick={iconClickHandler} />
       {clicked && (
         <p className={styles.expandText}>

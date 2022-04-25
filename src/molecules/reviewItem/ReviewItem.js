@@ -1,23 +1,17 @@
 import React from 'react';
 import Card from 'atoms/card/Card';
-import CircleCard from 'atoms/card/CircleCard';
 import styles from 'molecules/reviewItem/ReviewItem.module.scss';
-import image from 'images/beardedman.png';
+import RoundedImage from 'atoms/image/RoundedImage';
 
-const ReviewItem = () => {
+const ReviewItem = (props) => {
   return (
     <Card className="white rounded testimonial">
       <div className={styles.reviewItemWrapper}>
-        <h6>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-        </h6>
-        <CircleCard className="blue medium">
-          <img src={image} />
-        </CircleCard>
+        <h6>{props.comment || 'Comment'}</h6>
+        <RoundedImage src={props.image} className="medium full" />
         <div className="container">
-          <h5>Name</h5>
-          <p>Job</p>
+          <h5>{props.name || 'Name'}</h5>
+          <p>{props.title || 'Job'}</p>
         </div>
       </div>
     </Card>

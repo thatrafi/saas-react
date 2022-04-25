@@ -1,6 +1,6 @@
 import { blogPostActions } from 'reducers/blogPostReducer';
 
-const BASE_URL = 'https://blog-app-react-fb813-default-rtdb.asia-southeast1.firebasedatabase.app';
+const BASE_URL = 'https://saas-project-631b9-default-rtdb.asia-southeast1.firebasedatabase.app';
 
 export const getAllBlogPosts = () => {
   return async (dispatch) => {
