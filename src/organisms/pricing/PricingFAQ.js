@@ -5,7 +5,6 @@ import QuestionItem from 'molecules/question/QuestionItem';
 import styles from './PricingFAQ.module.scss';
 
 const PricingFAQ = (props) => {
-  // console.log('pricing faq component');
   return (
     <Row label="Pricing FAQ">
       <div className={styles.pricingFAQWrapper}>
