@@ -5,7 +5,7 @@ import styles from 'molecules/featureItem/FeatureItem.module.scss';
 const FeatureItem = (props) => {
   return (
     <div className={styles.featureItemWrapper}>
-      <Icon src={props.iconSrc || 'Icon@2x-1.png'} size={props.size || 'medium'} />
+      <Icon src={props.iconSrc || 'Icon@2x-1.png'} size={props.size} />
       <h4>{props.title || 'Lorem ipsum dolor sit amet'}</h4>
       <p>
         {props.desc ||

@@ -7,6 +7,7 @@ const Features2 = (props) => {
     <div className={styles.featuresWrapper}>
       <div className={styles.featureItemWrapper}>
         {props.features &&
+          props.features.length > 0 &&
           props.features.map((feature, key) => (
             <FeatureItem
               key={key}

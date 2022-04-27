@@ -5,9 +5,12 @@ import styles from 'molecules/feature/Features.module.scss';
 
 const Features = (props) => {
   return (
-    <div className={props.border ? styles.borderedItem : styles.nonBorderedItem}>
+    <div
+      className={props.border ? styles.borderedItem : styles.nonBorderedItem}
+      data-testid="featuresDiv">
       <Card className={`feature ${props.color || 'pink'}`}>
         {props.features &&
+          props.features.length > 0 &&
           props.features.map((feature, key) => (
             <FeatureItem
               key={key}
