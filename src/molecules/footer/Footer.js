@@ -1,6 +1,6 @@
 import React from 'react';
 import Ruler from 'atoms/ruler/Ruler';
-import NavBrand from 'molecules/brand/NavBrand';
+import Logo from 'atoms/logo/Logo';
 import FormWithButton from 'molecules/formWithButton/FormWithButton';
 import styles from 'molecules/footer/Footer.module.scss';
 import FooterLink from 'molecules/footer/FooterLink';
@@ -48,7 +48,7 @@ const Footer = () => {
           <FooterLink headerLabel={link.header} links={link.links} key={key} />
         ))}
         <div className={styles.footerSubscribe}>
-          <NavBrand link="/" navBrand="finsweet-white.png" />
+          <Logo link="/" src="finsweet-white.png" />
           <div className={styles.footerSubscribeSearch}>
             <h5>Subscribe to our Newslater</h5>
             <FormWithButton type="primary" onButtonClicked={formhandler} />

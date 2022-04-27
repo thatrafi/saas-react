@@ -6,7 +6,7 @@ const Card = (props) => {
   const classes = MapPropsToStyles(styles, props.className);
 
   return (
-    <div className={`${styles.card} ${classes}`} onClick={props.onClick}>
+    <div className={`${styles.card} ${classes}`} onClick={props.onClick} data-testid="cardComp">
       {props.children}
     </div>
   );

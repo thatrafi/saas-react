@@ -16,6 +16,7 @@ const Input = React.forwardRef((props, ref) => {
       onChange={onChange}
       onClick={onClick}
       ref={ref}
+      data-testid="inputComp"
     />
   );
 });

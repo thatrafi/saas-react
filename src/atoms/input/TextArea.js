@@ -13,7 +13,8 @@ const TextArea = React.forwardRef((props, ref) => {
       className={classes}
       onChange={onChange}
       onClick={onClick}
-      ref={ref}>
+      ref={ref}
+      data-testid="textAreaComp">
       {value}
     </textarea>
   );
