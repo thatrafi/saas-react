@@ -6,7 +6,6 @@ import Button from 'atoms/button/Button';
 import styles from 'molecules/pricing/Pricing.module.scss';
 
 const PricingItem = (props) => {
-  // console.log('pricing item component');
   return (
     <Card
       className={`${props.selected ? 'pricingSelected' : 'pricing'} column white`}
@@ -19,7 +18,7 @@ const PricingItem = (props) => {
         </div>
       </div>
       <div className={styles.pricingContent}>
-        <div className={styles.pricingFeatures}>
+        <div className={styles.pricingFeatures} data-testid="features">
           {props.features &&
             props.features.map((f, index) => <IconLabel key={index} label={f.name} />)}
         </div>
@@ -28,7 +27,7 @@ const PricingItem = (props) => {
         </p>
         <div className={styles.pricingFooter}>
           <div className="container">
-            <h3>{props.price}</h3>
+            <h3>{props.price || '$0,0'}</h3>
             <p>For Limited Periodt</p>
           </div>
           <Button type="button" label="Get Started" className="primary big rounded"></Button>

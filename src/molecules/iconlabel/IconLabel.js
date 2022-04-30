@@ -11,7 +11,7 @@ const IconLabel = (props) => {
       </CircleCard>
       <div className="container">
         <h5>{props.label || 'Label'}</h5>
-        {props.subtitle && <p>{props.subtitle}</p>}
+        {props.subtitle && <p data-testid="subtitle">{props.subtitle}</p>}
       </div>
     </div>
   );

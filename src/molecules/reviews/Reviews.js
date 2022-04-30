@@ -6,7 +6,7 @@ import styles from 'molecules/reviews/Reviews.module.scss';
 const Reviews = (props) => {
   return (
     <Card className="rounded row">
-      <div className={styles.reviewsWrapper}>
+      <div className={styles.reviewsWrapper} data-testid="reviewItems">
         {props.reviews &&
           props.reviews.map((review, key) => (
             <ReviewItem

@@ -10,12 +10,14 @@ const FooterLink = (props) => {
         <li>
           <h5>{props.headerLabel || 'Top Link'}</h5>
         </li>
-        {props.links &&
-          props.links.map((item, key) => (
-            <li key={key}>
-              <Link to={item.link}>{item.pathname}</Link>
-            </li>
-          ))}
+        <div data-testid="links">
+          {props.links &&
+            props.links.map((item, key) => (
+              <li key={key}>
+                <Link to={item.link}>{item.pathname}</Link>
+              </li>
+            ))}
+        </div>
       </ul>
     </div>
   );
