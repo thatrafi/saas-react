@@ -1,11 +1,12 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { componentRegistry } from 'route/registry';
 export const routes = [
   {
     title: 'Home',
     path: '/',
     containParam: false,
+    isHiddenNav: false,
     params: [],
     component: 'home'
   },
@@ -13,6 +14,7 @@ export const routes = [
     title: 'Product',
     path: '/product',
     containParam: false,
+    isHiddenNav: false,
     params: [],
     component: 'product'
   },
@@ -20,6 +22,7 @@ export const routes = [
     title: 'Pricing',
     path: '/pricing',
     containParam: false,
+    isHiddenNav: false,
     params: [],
     component: 'pricing'
   },
@@ -27,6 +30,7 @@ export const routes = [
     title: 'Blog',
     path: '/blog',
     containParam: false,
+    isHiddenNav: false,
     params: [],
     component: 'blog'
   },
@@ -34,6 +38,7 @@ export const routes = [
     title: 'Blog Post',
     path: '/post/:postId',
     containParam: false,
+    isHiddenNav: true,
     params: [],
     component: 'blogPost'
   },
@@ -41,6 +46,7 @@ export const routes = [
     title: 'About',
     path: '/about',
     containParam: false,
+    isHiddenNav: false,
     params: [],
     component: 'about'
   },
@@ -48,6 +54,7 @@ export const routes = [
     title: 'Contact',
     path: '/contact',
     containParam: false,
+    isHiddenNav: false,
     params: [],
     component: 'contact'
   },
@@ -55,6 +62,7 @@ export const routes = [
     title: 'Typography',
     path: '/typography',
     containParam: false,
+    isHiddenNav: true,
     params: [],
     component: 'typography'
   },
@@ -62,6 +70,7 @@ export const routes = [
     title: 'Error Page',
     path: '*',
     containParam: false,
+    isHiddenNav: true,
     params: [],
     component: 'error'
   }
@@ -74,3 +83,11 @@ export const createRoutes = () => (
     ))}
   </Routes>
 );
+
+export const createTo = (comp, params) => {
+  let location = useLocation();
+  const data = routes.find((item) => item.component === comp).path;
+  console.log(location);
+  console.log(data);
+  console.log(params);
+};
