@@ -3,13 +3,12 @@ import NavBrand from 'molecules/brand/NavBrand';
 import Button from 'atoms/button/Button';
 import { NavLink } from 'react-router-dom';
 import styles from 'molecules/header/Header.module.scss';
-import { routes, createTo } from 'route/routes';
+import { createTo, routes } from 'route/routes';
 
 const Header = () => {
-  createTo('product', { id: 1 });
   return (
     <header className={styles.header}>
-      <NavBrand link="/" navBrand="finsweet.png" />
+      <NavBrand link={createTo('home')} navBrand="finsweet.png" />
       <ul className={styles.NavUl}>
         {routes
           .filter((item) => !item.isHiddenNav)

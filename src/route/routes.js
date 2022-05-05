@@ -1,77 +1,59 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { componentRegistry } from 'route/registry';
 export const routes = [
   {
     title: 'Home',
     path: '/',
-    containParam: false,
     isHiddenNav: false,
-    params: [],
     component: 'home'
   },
   {
     title: 'Product',
     path: '/product',
-    containParam: false,
     isHiddenNav: false,
-    params: [],
     component: 'product'
   },
   {
     title: 'Pricing',
     path: '/pricing',
-    containParam: false,
     isHiddenNav: false,
-    params: [],
     component: 'pricing'
   },
   {
     title: 'Blog',
     path: '/blog',
-    containParam: false,
     isHiddenNav: false,
-    params: [],
     component: 'blog'
   },
   {
     title: 'Blog Post',
     path: '/post/:postId',
-    containParam: false,
     isHiddenNav: true,
-    params: [],
     component: 'blogPost'
   },
   {
     title: 'About',
     path: '/about',
-    containParam: false,
     isHiddenNav: false,
-    params: [],
     component: 'about'
   },
   {
     title: 'Contact',
     path: '/contact',
-    containParam: false,
     isHiddenNav: false,
-    params: [],
     component: 'contact'
   },
   {
     title: 'Typography',
     path: '/typography',
-    containParam: false,
     isHiddenNav: true,
-    params: [],
     component: 'typography'
   },
   {
     title: 'Error Page',
     path: '*',
-    containParam: false,
     isHiddenNav: true,
-    params: [],
     component: 'error'
   }
 ];
@@ -85,9 +67,23 @@ export const createRoutes = () => (
 );
 
 export const createTo = (comp, params) => {
-  let location = useLocation();
-  const data = routes.find((item) => item.component === comp).path;
-  console.log(location);
-  console.log(data);
-  console.log(params);
+  const data = routes.find((item) => item.component === comp);
+  if (!data) {
+    console.log(`cannot find data path ${comp}`);
+    return '/';
+  }
+  if (params) {
+    const pathName = data.path;
+    const key = pathName.split(':').pop();
+    const value = params[key];
+    if (value !== undefined) {
+      const root = pathName.split(':')[0];
+      return `${root}${value}`;
+    } else {
+      console.log(`cannot find parameter ${Object.keys(params)}`);
+      return '/';
+    }
+  } else {
+    return data.path;
+  }
 };
