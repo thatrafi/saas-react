@@ -4,7 +4,6 @@ import InfoRow from 'atoms/row/InfoRow';
 import Features from 'molecules/feature/Features';
 
 const FeatureHome1 = () => {
-  console.log('Feature Home1');
   const features1 = [
     {
       icon: 'Guard.svg',

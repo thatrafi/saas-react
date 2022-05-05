@@ -23,7 +23,7 @@ export const getAllBlogPosts = () => {
       });
       dispatch(blogPostActions.setPosts({ data: newArr }));
     } catch (error) {
-      console.log(error.message);
+      throw new Error(error.message);
     }
   };
 };

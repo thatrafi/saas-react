@@ -18,9 +18,7 @@ const PricingPage = () => {
     setPlans(plans);
     setQuestions(faqs);
   };
-  const selectedPlanHandler = useCallback((data) => {
-    console.log(data);
-  }, []);
+  const selectedPlanHandler = useCallback(() => {}, []);
   return (
     <Fragment>
       <PricingPlan plans={useMemo(() => plans, [plans])} onSelectedPlan={selectedPlanHandler} />
