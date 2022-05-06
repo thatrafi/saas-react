@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Home",
+        "path": "/",
+        "isHiddenNav": false,
+        "component": "home"
+    },
+    {
+        "title": "Product",
+        "path": "/product",
+        "isHiddenNav": false,
+        "component": "product"
+    },
+    {
+        "title": "Pricing",
+        "path": "/pricing",
+        "isHiddenNav": false,
+        "component": "pricing"
+    },
+    {
+        "title": "Blog",
+        "path": "/blog",
+        "isHiddenNav": false,
+        "component": "blog"
+    },
+    {
+        "title": "Blog Post",
+        "path": "/post/:postId",
+        "isHiddenNav": true,
+        "component": "blogPost"
+    },
+    {
+        "title": "About",
+        "path": "/about",
+        "isHiddenNav": false,
+        "component": "about"
+    },
+    {
+        "title": "Contact",
+        "path": "/contact",
+        "isHiddenNav": false,
+        "component": "contact"
+    },
+    {
+        "title": "Typography",
+        "path": "/typography",
+        "isHiddenNav": true,
+        "component": "typography"
+    },
+    {
+        "title": "Error Page",
+        "path": "*",
+        "isHiddenNav": true,
+        "component": "error"
+    }
+]

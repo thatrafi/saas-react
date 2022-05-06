@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RoundedImage from 'atoms/image/RoundedImage';
 import styles from './PostPreviewStyle.module.scss';
-import { createTo } from 'route/routes';
+import { pathTo } from 'route/routes';
 
 const PostPreviewItem = (props) => {
-  const link = createTo('blogPost', { postId: props.id });
+  const link = pathTo('blogPost', { postId: props.id });
   return (
     <div className={styles.previewItemWrapper}>
       <RoundedImage src={props.img || 'post.png'} />
