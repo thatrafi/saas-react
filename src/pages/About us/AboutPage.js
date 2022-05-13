@@ -6,6 +6,7 @@ import GoalVision from 'organisms/about/GoalVision';
 import HeaderAbout from 'organisms/about/HeaderAbout';
 import TeamMembers from 'organisms/about/TeamMembers';
 import CTA from 'organisms/cta/CTA';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const AboutPage = () => {
   const [features, setFeatures] = useState([]);
@@ -33,4 +34,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default withErrorBoundary(AboutPage);
