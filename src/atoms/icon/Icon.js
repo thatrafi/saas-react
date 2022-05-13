@@ -11,7 +11,7 @@ const Icon = (props) => {
   try {
     icon = images(`./${props.src}`);
   } catch (error) {
-    console.log(error);
+    throw new Error(error.message);
   }
   const classes = MapPropsToStyles(styles, props.size);
   return props.link ? (

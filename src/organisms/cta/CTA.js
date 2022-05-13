@@ -5,7 +5,6 @@ import InfoRow from 'atoms/row/InfoRow';
 import styles from './CTA.module.scss';
 
 const CTA = () => {
-  // console.log('cta component');
   return (
     <Row label="CTA" className="fit">
       <div className={styles.CTAWrapper}>
