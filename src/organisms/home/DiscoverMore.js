@@ -16,4 +16,4 @@ const DiscoverMore = (props) => {
   );
 };
 
-export default DiscoverMore;
+export default React.memo(DiscoverMore);

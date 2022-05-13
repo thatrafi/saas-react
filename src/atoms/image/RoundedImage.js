@@ -9,7 +9,7 @@ const RoundedImage = (props) => {
   try {
     var img = images(`./${props.src}`);
   } catch (error) {
-    console.log(error);
+    throw new Error(error.message);
   }
   return <img src={img} className={`${styles.imgRounded} ${classes}`} />;
 };

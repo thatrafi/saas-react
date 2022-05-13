@@ -11,7 +11,7 @@ const InfoGraphic = (props) => {
   try {
     image = images(`./${props.imgSrc}`);
   } catch (error) {
-    console.log(error);
+    throw new Error(error.message);
   }
   return (
     <TwoColumns>

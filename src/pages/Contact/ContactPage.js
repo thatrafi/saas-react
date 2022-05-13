@@ -5,9 +5,7 @@ import InfoRow from 'atoms/row/InfoRow';
 import CTA from 'organisms/cta/CTA';
 
 const ContactPage = () => {
-  const formHandler = (data) => {
-    console.log(data);
-  };
+  const formHandler = () => {};
   return (
     <Row>
       <InfoRow position="center" title="Get in touch with us">

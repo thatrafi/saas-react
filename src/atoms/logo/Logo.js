@@ -10,7 +10,7 @@ const Logo = (props) => {
   try {
     logo = images(`./${props.src}`);
   } catch (error) {
-    console.log(error);
+    throw new Error(error.message);
   }
   return props.link ? (
     <Link to={props.link}>

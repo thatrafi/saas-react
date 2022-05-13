@@ -37,4 +37,4 @@ const PricingItem = (props) => {
   );
 };
 
-export default PricingItem;
+export default React.memo(PricingItem);

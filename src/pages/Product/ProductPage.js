@@ -21,7 +21,7 @@ const ProductPage = () => {
         setInfoGraphics(infographics);
       })
       .catch((error) => {
-        console.log(`The unknown error has occurred: ${error}`);
+        throw new Error(`The unknown error has occurred: ${error}`);
       });
   };
   return (

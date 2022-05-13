@@ -4,9 +4,9 @@ import styles from './TrialForm.module.scss';
 import FormWithButton from 'molecules/formWithButton/FormWithButton';
 import dashboardImg from 'images/dashboard.png';
 
-const TrialForm = () => {
+const TrialForm = (props) => {
   const formHandler = (data) => {
-    console.log(data);
+    props.onFormSubmitted(data);
   };
   return (
     <Row label="Trial Form" className="center">
@@ -32,4 +32,4 @@ const TrialForm = () => {
   );
 };
 
-export default TrialForm;
+export default React.memo(TrialForm);

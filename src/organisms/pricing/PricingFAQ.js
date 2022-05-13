@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import Card from 'atoms/card/Card';
 import Row from 'atoms/row/Row';
 import QuestionItem from 'molecules/question/QuestionItem';
 import styles from './PricingFAQ.module.scss';
 
-const PricingFAQ = () => {
-  const [questions, setQuestions] = useState([]);
-  useEffect(() => {
-    getQuestions();
-  }, []);
-  const getQuestions = async () => {
-    const { data } = await Promise.resolve(axios.get('/api/pricing/faq'));
-    setQuestions(data);
-  };
+const PricingFAQ = (props) => {
   return (
     <Row label="Pricing FAQ">
       <div className={styles.pricingFAQWrapper}>
@@ -27,8 +18,8 @@ const PricingFAQ = () => {
               </p>
             </div>
             <div className={styles.contentQuestions}>
-              {questions &&
-                questions.map((q, key) => (
+              {props.questions &&
+                props.questions.map((q, key) => (
                   <QuestionItem question={q.question} detail={q.answer} key={key} />
                 ))}
             </div>
@@ -39,4 +30,4 @@ const PricingFAQ = () => {
   );
 };
 
-export default PricingFAQ;
+export default React.memo(PricingFAQ);

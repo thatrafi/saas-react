@@ -34,4 +34,4 @@ const FeatureHome1 = () => {
   );
 };
 
-export default FeatureHome1;
+export default React.memo(FeatureHome1);

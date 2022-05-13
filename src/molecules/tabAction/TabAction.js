@@ -27,4 +27,4 @@ const TabAction = (props) => {
   );
 };
 
-export default TabAction;
+export default React.memo(TabAction);
