@@ -1,3 +1,5 @@
+@import 'settings/variables.scss';
+
 .pricingFAQWrapper {
   display: flex;
   justify-content: center;
@@ -8,6 +10,10 @@
   display: flex;
   flex-flow: row wrap;
   padding: 2rem;
+  @include responsive(mobile){
+    gap: 1rem;
+    text-align: center;
+  }
 }
 
 .contentTitle {

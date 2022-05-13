@@ -1,7 +1,19 @@
+@import 'settings/variables.scss';
+
 .membersWrapper {
   display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  @include responsive(pc) {
+    flex-flow: row;
+    gap: 0;
+  }
 }
 
 .content {
-  width: 60%;
+  width: 100%;
+  text-align: center;
+  @include responsive(pc) {
+    width: 60%;
+  }
 }

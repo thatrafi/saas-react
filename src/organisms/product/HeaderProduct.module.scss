@@ -1,3 +1,5 @@
+@import 'settings/variables.scss';
+
 .buttons {
   display: flex;
   flex-direction: row;
@@ -9,9 +11,18 @@
     width: 100%;
     height: 100%;
   }
+  @include responsive(mobile){
+    img {
+      margin-left: 3rem;
+    }
+  }
 }
 
 .contentWrapper{
     align-self: flex-start;
     padding-right: 8rem;
+    @include responsive(mobile){
+      align-self: center;
+      padding-right: 0rem;
+    }
 }

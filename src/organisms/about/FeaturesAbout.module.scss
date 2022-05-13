@@ -1,10 +1,14 @@
 @import 'styles/colors.module.scss';
+@import 'settings/variables.scss';
 
-.featuresCard{
-    border-radius: 20px;
-    padding: 4rem;
+.featuresCard {
+  border-radius: 20px;
+  padding: 4rem;
+  @include responsive(mobile) {
+    padding: 1rem;
+  }
 }
 
-.pink{
-    background-color: rgba($color: $pinkColor, $alpha: 0.15);
+.pink {
+  background-color: rgba($color: $pinkColor, $alpha: 0.15);
 }

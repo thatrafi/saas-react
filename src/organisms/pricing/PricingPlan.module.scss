@@ -1,14 +1,19 @@
-.pricingPlansWrapper{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    gap: 30px;
-    text-align: center;
-    align-items: center;
+@import 'settings/variables.scss';
+
+.pricingPlansWrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
 }
 
-.plans{
-    display: flex;
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include responsive(pc) {
     flex-direction: row;
-    gap: 20px;
+  }
 }

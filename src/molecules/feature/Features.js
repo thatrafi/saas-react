@@ -6,7 +6,7 @@ import styles from 'molecules/feature/Features.module.scss';
 const Features = (props) => {
   return (
     <div className={props.border ? styles.borderedItem : styles.nonBorderedItem}>
-      <Card className={`feature row ${props.color || 'pink'}`}>
+      <Card className={`feature ${props.color || 'pink'}`}>
         {props.features &&
           props.features.map((feature, key) => (
             <FeatureItem

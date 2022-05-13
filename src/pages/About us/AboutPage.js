@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
+import React, { Fragment, useEffect, useState } from 'react';
 import AboutUs from 'organisms/about/AboutUs';
 import FeaturesAbout from 'organisms/about/FeaturesAbout';
 import GoalVision from 'organisms/about/GoalVision';

@@ -1,4 +1,3 @@
-import 'fake-db';
 import React, { Fragment } from 'react';
 import * as Sentry from '@sentry/react';
 import Footer from 'molecules/footer/Footer';
@@ -16,6 +15,7 @@ import AboutPage from 'pages/About us/AboutPage';
 import ContactPage from 'pages/Contact/ContactPage';
 import TypographyPage from 'pages/Typography/TypographyPage';
 import ErrorPage from 'pages/Error/ErrorPage';
+import 'fake-db';
 
 const App = () => {
   return (

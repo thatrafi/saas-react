@@ -4,10 +4,16 @@ $heightInput: 72px;
 
 input {
   background-color: white;
+  width: 100%;
   color: $primaryColor;
   padding: 0 20px;
   min-height: $heightInput;
   border: 0px;
+  box-sizing: border-box;
+  @include responsive(mobile){
+    padding: 0 0 0 1rem;
+    box-sizing: border-box;
+  }
 }
 
 textarea {
