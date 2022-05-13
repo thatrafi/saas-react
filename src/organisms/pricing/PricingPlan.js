@@ -6,7 +6,6 @@ import styles from './PricingPlan.module.scss';
 import { filteredArray } from 'helper/ArrayHelper';
 
 const PricingPlan = (props) => {
-  // console.log('Pricing Plans component');
   const [isSelected, setisSelected] = useState('plan0');
   const [filterBy, setFilteredBy] = useState(1);
   const filteredPlans = useMemo(() => {
@@ -20,7 +19,6 @@ const PricingPlan = (props) => {
   }, [props.plans]);
 
   useEffect(() => {
-    // handler for user after pick the plan
     props.onSelectedPlan(isSelected);
   }, [isSelected]);
 

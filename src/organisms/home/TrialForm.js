@@ -5,7 +5,6 @@ import FormWithButton from 'molecules/formWithButton/FormWithButton';
 import dashboardImg from 'images/dashboard.png';
 
 const TrialForm = (props) => {
-  console.log('Trial Home');
   const formHandler = (data) => {
     props.onFormSubmitted(data);
   };
