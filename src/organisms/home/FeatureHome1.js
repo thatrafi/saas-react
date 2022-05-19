@@ -22,24 +22,6 @@ const features1 = [
 ];
 
 const FeatureHome1 = () => {
-  const features1 = [
-    {
-      icon: 'Guard.svg',
-      title: 'High security to protect from piracy',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.'
-    },
-    {
-      icon: 'Thumb.svg',
-      title: 'Premium quality performance',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.'
-    },
-    {
-      icon: 'Headset.svg',
-      title: 'Full time customer support - 24/7',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.'
-    }
-  ];
-
   return (
     <Row label="Feature 1">
       <InfoRow
