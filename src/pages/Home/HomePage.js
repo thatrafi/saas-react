@@ -11,6 +11,7 @@ import ReviewsHome from 'organisms/home/ReviewsHome';
 import TrialForm from 'organisms/home/TrialForm';
 import WhyUs from 'organisms/home/WhyUs';
 import { whyUsData, discoverData } from 'data/homeData';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const HomePage = () => {
   const [reviews, setReviews] = useState([]);
@@ -26,6 +27,7 @@ const HomePage = () => {
   const formHandler = useCallback((data) => {
     setEmail(data);
   }, []);
+
   return (
     <Fragment>
       <TrialForm onFormSubmitted={formHandler} />
@@ -48,4 +50,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default withErrorBoundary(HomePage);

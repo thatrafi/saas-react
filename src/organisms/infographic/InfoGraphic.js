@@ -12,6 +12,7 @@ const InfoGraphic = (props) => {
   } catch (error) {
     throw new Error(error.message);
   }
+
   return (
     <TwoColumns>
       <div style={{ order: props.imgPosition === 'left' ? 1 : 0, alignSelf: 'flex-start' }}>

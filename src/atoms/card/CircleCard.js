@@ -6,6 +6,7 @@ import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const CircleCard = (props) => {
   const classes = MapPropsToStyles(styles, props.className);
+
   return <div className={`${styles.circleCard} ${classes}`}>{props.children}</div>;
 };
 

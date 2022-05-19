@@ -3,6 +3,7 @@ import React, { Fragment, useCallback, useEffect, useState, useMemo } from 'reac
 import CTA from 'organisms/cta/CTA';
 import PricingFAQ from 'organisms/pricing/PricingFAQ';
 import PricingPlan from 'organisms/pricing/PricingPlan';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const PricingPage = () => {
   const [plans, setPlans] = useState([]);
@@ -19,6 +20,7 @@ const PricingPage = () => {
     setQuestions(faqs);
   };
   const selectedPlanHandler = useCallback(() => {}, []);
+
   return (
     <Fragment>
       <PricingPlan plans={useMemo(() => plans, [plans])} onSelectedPlan={selectedPlanHandler} />
@@ -28,4 +30,4 @@ const PricingPage = () => {
   );
 };
 
-export default PricingPage;
+export default withErrorBoundary(PricingPage);

@@ -103,10 +103,12 @@ const pricingDB = {
 
 Mock.onGet('/api/pricing/plans').reply(() => {
   const response = pricingDB.plans;
+
   return [200, response];
 });
 
 Mock.onGet('/api/pricing/faq').reply(() => {
   const response = pricingDB.faq;
+
   return [200, response];
 });

@@ -4,6 +4,7 @@ import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 
 const Ruler = (props) => {
   const classes = MapPropsToStyles(styles, props.type);
+
   return <div className={`${styles.ruler} ${classes}`} />;
 };
 

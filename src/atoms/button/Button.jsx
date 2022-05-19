@@ -8,6 +8,7 @@ const Button = (props) => {
   const styleButton = {};
   const classes = MapPropsToStyles(styles, className);
   const onClickClasses = MapPropsToStyles(styles, onClickStyle);
+
   return (
     <button
       type={type}
@@ -15,7 +16,7 @@ const Button = (props) => {
       onClick={onClick}
       onChange={onChange}
       className={clicked ? onClickClasses : classes}>
-      <h6>{label}</h6>
+      <h6>{label || 'Button'}</h6>
     </button>
   );
 };
