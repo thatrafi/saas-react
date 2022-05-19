@@ -9,6 +9,7 @@ export const MapPropsToStyles = (styles, className) => {
         classNames.push(styles[c]);
       }
     });
+
     return clsx(classNames);
   } else {
     return '';

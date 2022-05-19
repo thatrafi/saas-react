@@ -8,6 +8,7 @@ const QuestionItem = (props) => {
   const iconClickHandler = () => {
     setClicked(!clicked);
   };
+
   return (
     <Card className={`${clicked ? 'questionExpand' : 'question'} row white`}>
       <h4>{props.question || 'Question Item'}</h4>

@@ -8,10 +8,12 @@ const aboutDB = {
 
 Mock.onGet('/api/about/features').reply(() => {
   const response = aboutDB.features;
+
   return [200, response];
 });
 
 Mock.onGet('/api/about/teams').reply(() => {
   const response = aboutDB.teams;
+
   return [200, response];
 });

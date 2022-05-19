@@ -67,10 +67,12 @@ const productDB = {
 
 Mock.onGet('/api/product/features').reply(() => {
   const response = productDB.features;
+
   return [200, response];
 });
 
 Mock.onGet('/api/product/infographics').reply(() => {
   const response = productDB.infographics;
+
   return [200, response];
 });

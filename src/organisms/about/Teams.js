@@ -5,6 +5,7 @@ import { teamData } from 'data/aboutData';
 
 const Teams = (props) => {
   const data = props.teams || teamData;
+
   return (
     <div className={styles.teamItems}>
       {data &&

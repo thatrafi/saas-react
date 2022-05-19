@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": ["plugin:react/recommended", "eslint:recommended", "plugin:prettier/recommended"],
   "parserOptions": {
@@ -14,6 +15,14 @@
   "plugins": ["react"],
   "rules": {
     "react/prop-types": 0,
-    "react/display-name": 0
+    "react/display-name": 0,
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ]
   }
 }

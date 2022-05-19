@@ -4,7 +4,7 @@ import styles from 'molecules/logos/Logos.module.scss';
 
 const Logos = () => {
   return (
-    <div className={styles.logosWrapper}>
+    <div className={styles.logosWrapper} data-testid="logoItems">
       <Logo src="Logo_1.png" />
       <Logo src="Logo_2.png" />
       <Logo src="Logo_3.png" />

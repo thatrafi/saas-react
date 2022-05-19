@@ -5,8 +5,9 @@ import styles from 'molecules/feature/Features.module.scss';
 const Features2 = (props) => {
   return (
     <div className={styles.featuresWrapper}>
-      <div className={styles.featureItemWrapper}>
+      <div className={styles.featureItemWrapper} data-testid="featureItem">
         {props.features &&
+          props.features.length > 0 &&
           props.features.map((feature, key) => (
             <FeatureItem
               key={key}

@@ -1,54 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Ruler from 'atoms/ruler/Ruler';
-import NavBrand from 'molecules/brand/NavBrand';
+import Logo from 'atoms/logo/Logo';
 import FormWithButton from 'molecules/formWithButton/FormWithButton';
 import styles from 'molecules/footer/Footer.module.scss';
 import FooterLink from 'molecules/footer/FooterLink';
 import Icon from 'atoms/icon/Icon';
+import { footerLinks } from 'data/footerData';
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      header: 'Company',
-      links: [
-        { pathname: 'About Us', link: '/' },
-        { pathname: 'Why Choose Us', link: '/' },
-        { pathname: 'Pricing', link: '/pricing' },
-        { pathname: 'Testimonials', link: '/' }
-      ]
-    },
-    {
-      header: 'Resources',
-      links: [
-        { pathname: 'Privacy Policy', link: '/' },
-        { pathname: 'Terms and Condition', link: '/' },
-        { pathname: 'Blog', link: '/' },
-        { pathname: 'Contact Us', link: '/' }
-      ]
-    },
-    {
-      header: 'Product',
-      links: [
-        { pathname: 'Project management', link: '/' },
-        { pathname: 'Time tracker', link: '/' },
-        { pathname: 'Time scheduler', link: '/' },
-        { pathname: 'Lead generate', link: '/' },
-        { pathname: 'Remote collaboration', link: '/' }
-      ]
-    }
-  ];
-  const formhandler = () => {};
+  const [emailSubs, setEmailSubs] = useState('');
+  const formhandler = (data) => {
+    setEmailSubs(data);
+  };
+
   return (
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContent}>
-        {footerLinks.map((link, key) => (
-          <FooterLink headerLabel={link.header} links={link.links} key={key} />
-        ))}
+        <div data-testid="footerlinks">
+          {footerLinks.map((link, key) => (
+            <FooterLink headerLabel={link.header} links={link.links} key={key} />
+          ))}
+        </div>
         <div className={styles.footerSubscribe}>
-          <NavBrand link="/" navBrand="finsweet-white.png" />
+          <Logo link="/" src="finsweet-white.png" />
           <div className={styles.footerSubscribeSearch}>
             <h5>Subscribe to our Newslater</h5>
-            <FormWithButton type="primary" onButtonClicked={formhandler} />
+            <FormWithButton inputType="email" type="primary" onButtonClicked={formhandler} />
+            {emailSubs && <p>Thanks for subscribing {emailSubs}!</p>}
           </div>
         </div>
       </div>

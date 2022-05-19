@@ -1,14 +1,13 @@
 import React from 'react';
-import NavBrand from 'molecules/brand/NavBrand';
 import Button from 'atoms/button/Button';
 import { NavLink } from 'react-router-dom';
-
+import Logo from 'atoms/logo/Logo';
 import styles from 'molecules/header/Header.module.scss';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <NavBrand link="/" navBrand="finsweet.png" />
+      <Logo link="/" src="finsweet.png" />
       <ul className={styles.NavUl}>
         <li className={styles.NavItem}>
           <NavLink to="/" exact activeClassName={styles.active}>
