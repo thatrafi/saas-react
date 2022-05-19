@@ -17,10 +17,10 @@ const Icon = (props) => {
 
   return props.link ? (
     <Link to={{ pathname: props.link }} target="_blank">
-      <img src={icon} alt={fileName} className={classes} onClick={props.onclick} />
+      <img src={icon} alt={fileName} className={classes || 'medium'} onClick={props.onclick} />
     </Link>
   ) : (
-    <img src={icon} alt={fileName} className={classes} onClick={props.onclick} />
+    <img src={icon} alt={fileName} className={classes || 'medium'} onClick={props.onclick} />
   );
 };
 

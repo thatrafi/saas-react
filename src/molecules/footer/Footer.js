@@ -37,9 +37,7 @@ const Footer = () => {
       ]
     }
   ];
-  const formhandler = (data) => {
-    console.log(data);
-  };
+  const formhandler = () => {};
 
   return (
     <footer className={styles.footerWrapper}>

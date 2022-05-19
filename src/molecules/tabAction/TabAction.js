@@ -4,7 +4,6 @@ import styles from 'molecules/tabAction/TabAction.module.scss';
 import Button from 'atoms/button/Button';
 
 const TabAction = (props) => {
-  // console.log('Tab Action component');
   const [isClicked, setisClicked] = useState(0);
 
   return (

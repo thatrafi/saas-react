@@ -6,7 +6,6 @@ import Button from 'atoms/button/Button';
 import styles from 'molecules/pricing/Pricing.module.scss';
 
 const PricingItem = (props) => {
-  // console.log('pricing item component');
   return (
     <Card
       className={`${props.selected ? 'pricingSelected' : 'pricing'} column white`}
