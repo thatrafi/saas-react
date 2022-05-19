@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import AllPosts from 'organisms/blog/AllPosts';
 import BlogHeader from 'organisms/blog/BlogHeader';
 import CTA from 'organisms/cta/CTA';
+import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const BlogPage = () => {
   return (
@@ -13,4 +14,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default withErrorBoundary(BlogPage);

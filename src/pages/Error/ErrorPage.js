@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import Row from 'atoms/row/Row';
 import styles from './ErrorPage.module.scss';
+const logoName = '{finsweet.';
 
 const ErrorPage = () => {
-  const logoName = '{finsweet.';
   return (
     <Fragment>
       <Row>

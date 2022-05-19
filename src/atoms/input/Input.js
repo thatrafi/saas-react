@@ -5,6 +5,7 @@ import { MapPropsToStyles } from 'helper/MapPropsToStyles';
 const Input = React.forwardRef((props, ref) => {
   const { type, name, value, placeholder, className, onChange, onClick } = props;
   const classes = MapPropsToStyles(styles, className);
+
   return (
     <input
       type={type}

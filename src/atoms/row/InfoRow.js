@@ -7,6 +7,7 @@ const InfoRow = (props) => {
   const classes = MapPropsToStyles(styles, props.position);
   const headerStyle = { textAlign: props.position };
   const widthStyle = { maxWidth: props.titleWidth + 'rem' };
+
   return (
     <div className={`${styles.row} ${classes}`}>
       <div className={styles.header} style={headerStyle}>

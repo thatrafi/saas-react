@@ -5,6 +5,7 @@ import Button from 'atoms/button/Button';
 
 const TabAction = (props) => {
   const [isClicked, setisClicked] = useState(0);
+
   return (
     <div className={styles.tabActionCard}>
       <Card className="card fit row violet">

@@ -38,6 +38,7 @@ const Footer = () => {
     }
   ];
   const formhandler = () => {};
+
   return (
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContent}>

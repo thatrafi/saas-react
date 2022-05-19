@@ -8,6 +8,7 @@ const Button = (props) => {
   const styleButton = {};
   const classes = MapPropsToStyles(styles, className);
   const onClickClasses = MapPropsToStyles(styles, onClickStyle);
+
   return (
     <button
       type={type}
