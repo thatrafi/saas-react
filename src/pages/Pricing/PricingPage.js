@@ -6,10 +6,8 @@ import PricingPlan from 'organisms/pricing/PricingPlan';
 import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const PricingPage = () => {
-  // console.log('princing page component');
   const [plans, setPlans] = useState([]);
   const [questions, setQuestions] = useState([]);
-  // const [selectedPlan, setSelectedPlan] = useState('');
   useEffect(() => {
     getData();
   }, []);
@@ -21,15 +19,10 @@ const PricingPage = () => {
     setPlans(plans);
     setQuestions(faqs);
   };
-  // get selected plan id
-  const selectedPlanHandler = useCallback((data) => {
-    // setSelectedPlan(data);
-    console.log(data);
-  }, []);
+  const selectedPlanHandler = useCallback(() => {}, []);
 
   return (
     <Fragment>
-      {/* {selectedPlan && <p>{selectedPlan}</p>} */}
       <PricingPlan plans={useMemo(() => plans, [plans])} onSelectedPlan={selectedPlanHandler} />
       <PricingFAQ questions={questions} />
       <CTA />

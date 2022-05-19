@@ -22,8 +22,6 @@ const features1 = [
 ];
 
 const FeatureHome1 = () => {
-  console.log('Feature Home1');
-
   return (
     <Row label="Feature 1">
       <InfoRow

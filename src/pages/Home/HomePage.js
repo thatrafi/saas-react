@@ -15,6 +15,7 @@ import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
 
 const HomePage = () => {
   const [reviews, setReviews] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [email, setEmail] = useState([]);
   useEffect(() => {
     getData();
@@ -25,7 +26,6 @@ const HomePage = () => {
   };
   const formHandler = useCallback((data) => {
     setEmail(data);
-    console.log(email);
   }, []);
 
   return (
