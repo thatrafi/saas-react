@@ -2,23 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import defaultLogo from 'images/logo/finsweet.png';
 
-// eslint-disable-next-line no-undef
-const images = require.context('images/logo', true);
-
 const Logo = (props) => {
   var logo = '';
+  var fileName = props.src;
   try {
-    logo = images(`./${props.src}`);
+    logo = require(`images/logo/${fileName}`);
   } catch (error) {
-    console.log(error);
+    fileName = 'default.png';
+    logo = require(`images/logo/${fileName}`);
   }
 
   return props.link ? (
     <Link to={props.link}>
-      <img src={logo || defaultLogo} />
+      <img src={logo || defaultLogo} alt={fileName} />
     </Link>
   ) : (
-    <img src={logo || defaultLogo} />
+    <img src={logo || defaultLogo} alt={fileName} />
   );
 };
 
