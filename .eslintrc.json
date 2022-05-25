@@ -16,6 +16,7 @@
   "rules": {
     "react/prop-types": 0,
     "react/display-name": 0,
+    "no-undef": "off", // you do not use the no-undef lint rule on TypeScript
     "padding-line-between-statements": [
       "error",
       {
