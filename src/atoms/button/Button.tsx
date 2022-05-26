@@ -28,7 +28,7 @@ const Button: React.FC<Props> = ({
 
   return (
     <button
-      type={type}
+      type={type || 'button'}
       style={styleButton}
       onClick={onClick}
       onChange={onChange}
