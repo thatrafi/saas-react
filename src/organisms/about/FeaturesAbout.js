@@ -8,8 +8,6 @@ import { featuresAbout } from 'data/aboutData';
 const FeaturesAbout = (props) => {
   return (
     <Row>
-      {/* Test Error Boundary */}
-      <p>{props.test.error}</p>
       <InfoRow
         position="center"
         title="Our corporate values"

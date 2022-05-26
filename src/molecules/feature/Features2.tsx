@@ -1,14 +1,19 @@
 import React from 'react';
 import FeatureItem from 'molecules/featureItem/FeatureItem';
 import styles from 'molecules/feature/Features.module.scss';
+import Feature from 'models/Feature';
 
-const Features2 = (props) => {
+type FeaturesProps = {
+  features: [Feature];
+};
+
+const Features2: React.FC<FeaturesProps> = ({ features }) => {
   return (
     <div className={styles.featuresWrapper}>
       <div className={styles.featureItemWrapper} data-testid="featureItem">
-        {props.features &&
-          props.features.length > 0 &&
-          props.features.map((feature, key) => (
+        {features &&
+          features.length > 0 &&
+          features.map((feature, key) => (
             <FeatureItem
               key={key}
               iconSrc={feature.icon}

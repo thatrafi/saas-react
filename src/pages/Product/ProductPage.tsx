@@ -8,10 +8,12 @@ import InfoGraphic from 'organisms/infographic/InfoGraphic';
 import FeatureHome2 from 'organisms/home/FeatureHome2';
 import CTA from 'organisms/cta/CTA';
 import { withErrorBoundary } from 'molecules/error/withErrorBoundary';
+import InfoGraphicModel from 'models/InfoGraphicModel';
+import Feature from 'models/Feature';
 
 const ProductPage = () => {
-  const [features, setFeatures] = useState([]);
-  const [infographics, setInfoGraphics] = useState([]);
+  const [features, setFeatures] = useState<[Feature]>();
+  const [infographics, setInfoGraphics] = useState<[InfoGraphicModel]>();
   useEffect(() => {
     getData();
   }, []);
